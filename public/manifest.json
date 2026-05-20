@@ -1,0 +1,19 @@
+{
+  "name": "NavHub Barbearia",
+  "short_name": "NavHub",
+  "description": "Plataforma premium de agendamento de barbearia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#0D0D0D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/5551/5551325.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

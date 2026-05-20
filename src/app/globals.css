@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #0D0D0D;
+  --color-foreground: #F5F5F5;
+  
+  --color-nav-bg: #0D0D0D;
+  --color-nav-surface: #1A1A1A;
+  --color-nav-card: #141414;
+  --color-nav-gold: #E5B05C;
+  --color-nav-gold-dark: #C69446;
+  --color-nav-text-light: #F5F5F5;
+  --color-nav-text-muted: #A3A3A3;
+  --color-nav-border: #222222;
+  --color-nav-border-light: #333333;
+  
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-outfit), system-ui, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0D0D0D;
+  --foreground: #F5F5F5;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0D0D0D;
+  color: #F5F5F5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent scroll bouncing */
+  overscroll-behavior-y: none;
+}
+
+/* Custom font utilities */
+.font-display {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbars for carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium Card Mask / Hover Effect */
+.premium-glow {
+  box-shadow: 0 0 20px rgba(229, 176, 92, 0.08);
+}
+
+.premium-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(229, 176, 92, 0.15);
+}
+
+/* PWA Styling Tweak for iOS top notches and bottom bars */
+@supports (padding: env(safe-area-inset-top)) {
+  .pwa-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pwa-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
