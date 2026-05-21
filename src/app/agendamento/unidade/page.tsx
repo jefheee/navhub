@@ -56,16 +56,21 @@ export default function UnitSelectionPage() {
             </span>
           </div>
           <div className="space-y-2">
-            {activeAppointments.map((appt) => (
-              <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center text-xs text-nav-text-light border-b border-nav-border/30 pb-2 last:border-0 last:pb-0 gap-1">
-                <div>
-                  <span className="font-semibold text-nav-gold">{appt.service.name}</span> em <span className="font-medium text-white">{appt.unit.name}</span>
+            {activeAppointments.map((appt) => {
+              const [year, month, day] = appt.date.split('-');
+              const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
+              const formattedDate = dateObj.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' });
+              return (
+                <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center text-xs text-nav-text-light border-b border-nav-border/30 pb-2 last:border-0 last:pb-0 gap-1.5">
+                  <div>
+                    <span className="font-semibold text-nav-gold">{appt.service.name}</span> com <span className="font-medium text-white">{appt.barber.name}</span> em <span className="text-nav-text-muted">{appt.unit.name}</span>
+                  </div>
+                  <div className="text-nav-text-muted font-display shrink-0">
+                    <span className="capitalize font-semibold text-white">{formattedDate}</span> às <span className="text-nav-gold font-semibold">{appt.time}</span>
+                  </div>
                 </div>
-                <div className="text-nav-text-muted">
-                  <span className="capitalize">{appt.date.split('-')[2]}/{appt.date.split('-')[1]}</span> às <span className="text-nav-gold font-semibold">{appt.time}</span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}

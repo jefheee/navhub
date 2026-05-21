@@ -68,9 +68,16 @@ export default function HomePage() {
       
       {/* Appointment Section */}
       <section className="reveal-item">
-        <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display mb-3">
-          Próximos Agendamentos
-        </h3>
+        <div className="flex justify-between items-center mb-3">
+          <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
+            Próximos Agendamentos
+          </h3>
+          {activeAppointments.length > 0 && (
+            <span className="text-[10px] bg-nav-gold/15 text-nav-gold border border-nav-gold/30 px-2.5 py-0.5 rounded-full font-bold font-display">
+              {activeAppointments.length === 1 ? '1 Agendamento Ativo' : `${activeAppointments.length} Agendamentos Ativos`}
+            </span>
+          )}
+        </div>
         
         {activeAppointments.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

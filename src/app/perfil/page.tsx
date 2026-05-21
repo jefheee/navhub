@@ -222,120 +222,129 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      {/* User Card */}
-      <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex items-center gap-4 profile-reveal premium-glow">
-        <div className="relative group">
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-nav-gold shadow-[0_0_10px_rgba(229,176,92,0.15)] relative bg-neutral-900">
-            <img
-              src={userProfile.avatar}
-              alt={userProfile.name}
-              className="w-full h-full object-cover"
-            />
+      {/* Profile Items in a Two-Column Grid on Desktop */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+        
+        {/* Left Column: User Card & Logout Button */}
+        <div className="md:col-span-4 flex flex-col gap-6 profile-reveal">
+          {/* User Card */}
+          <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-row md:flex-col items-center md:text-center gap-4 premium-glow">
+            <div className="relative group md:mx-auto">
+              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-nav-gold shadow-[0_0_10px_rgba(229,176,92,0.15)] relative bg-neutral-900 mx-auto">
+                <img
+                  src={userProfile.avatar}
+                  alt={userProfile.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <button 
+                onClick={() => setIsPhotoModalOpen(true)}
+                className="absolute -bottom-1 -right-1 p-1.5 rounded-full bg-nav-gold text-black border border-black hover:bg-yellow-500 transition-colors cursor-pointer active:scale-90"
+                title="Alterar Foto"
+              >
+                <Camera className="w-3.5 h-3.5" />
+              </button>
+            </div>
+            <div className="md:w-full">
+              <h3 className="text-lg font-bold text-nav-text-light font-display">{userProfile.name}</h3>
+              <p className="text-xs text-nav-text-muted">{userProfile.email}</p>
+              <span className="inline-block text-[9px] bg-nav-gold/15 text-nav-gold border border-nav-gold/20 font-bold px-2 py-0.5 rounded mt-2 uppercase tracking-wider font-display">
+                {userProfile.vipStatus === 'premium' 
+                  ? 'Cliente VIP Premium' 
+                  : userProfile.vipStatus === 'basic' 
+                    ? 'Cliente VIP Básico' 
+                    : 'Cliente Regular'}
+              </span>
+            </div>
           </div>
-          <button 
-            onClick={() => setIsPhotoModalOpen(true)}
-            className="absolute -bottom-1 -right-1 p-1.5 rounded-full bg-nav-gold text-black border border-black hover:bg-yellow-500 transition-colors cursor-pointer active:scale-90"
-            title="Alterar Foto"
+
+          {/* Logout Button */}
+          <button
+            onClick={handleLogout}
+            className="w-full py-3.5 border border-red-950/50 bg-red-950/10 hover:bg-red-900/20 text-red-400 hover:text-red-300 font-bold font-display rounded-md transition-all cursor-pointer flex items-center justify-center gap-2 active:scale-[0.98]"
           >
-            <Camera className="w-3.5 h-3.5" />
+            <LogOut className="w-4 h-4" />
+            Sair da Conta
           </button>
         </div>
-        <div>
-          <h3 className="text-lg font-bold text-nav-text-light font-display">{userProfile.name}</h3>
-          <p className="text-xs text-nav-text-muted">{userProfile.email}</p>
-          <span className="inline-block text-[9px] bg-nav-gold/15 text-nav-gold border border-nav-gold/20 font-bold px-2 py-0.5 rounded mt-2 uppercase tracking-wider font-display">
-            {userProfile.vipStatus === 'premium' 
-              ? 'Cliente VIP Premium' 
-              : userProfile.vipStatus === 'basic' 
-                ? 'Cliente VIP Básico' 
-                : 'Cliente Regular'}
-          </span>
+
+        {/* Right Column: Settings and Preferences */}
+        <div className="md:col-span-8 flex flex-col gap-6 profile-reveal">
+          {/* Menu Options Group 1 */}
+          <div className="flex flex-col bg-nav-card border border-nav-border rounded-lg overflow-hidden">
+            <div className="p-4 border-b border-nav-border/50 bg-[#121212]">
+              <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">
+                Configurações da Conta
+              </span>
+            </div>
+            
+            {/* Option: Meus Dados */}
+            <button 
+              onClick={() => setIsDataModalOpen(true)}
+              className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group w-full bg-transparent border-0"
+            >
+              <div className="flex items-center gap-3">
+                <User className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
+                <div>
+                  <span className="text-sm font-semibold text-nav-text-light block">Meus Dados</span>
+                  <span className="text-[10px] text-nav-text-muted">Nome, e-mail e telefone de contato</span>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
+            </button>
+
+            {/* Option: Preferências */}
+            <button 
+              onClick={() => setIsPrefsModalOpen(true)}
+              className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group w-full bg-transparent border-0"
+            >
+              <div className="flex items-center gap-3">
+                <Settings className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
+                <div>
+                  <span className="text-sm font-semibold text-nav-text-light block">Preferências</span>
+                  <span className="text-[10px] text-nav-text-muted">Barbeiro favorito e notificações push</span>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
+            </button>
+
+            {/* Option: Segurança */}
+            <button 
+              onClick={() => setIsSecurityModalOpen(true)}
+              className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors text-left cursor-pointer group w-full bg-transparent border-0"
+            >
+              <div className="flex items-center gap-3">
+                <Shield className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
+                <div>
+                  <span className="text-sm font-semibold text-nav-text-light block">Segurança</span>
+                  <span className="text-[10px] text-nav-text-muted">Alterar senha e autenticação</span>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
+            </button>
+          </div>
+
+          {/* Menu Options Group 2 */}
+          <div className="flex flex-col bg-nav-card border border-nav-border rounded-lg overflow-hidden">
+            <div className="p-4 border-b border-nav-border/50 bg-[#121212]">
+              <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">
+                Financeiro & Planos
+              </span>
+            </div>
+
+            <Link href="/clube-vip" className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group">
+              <div className="flex items-center gap-3">
+                <CreditCard className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
+                <div>
+                  <span className="text-sm font-semibold text-nav-text-light block">Clube VIP NavHub</span>
+                  <span className="text-[10px] text-nav-text-muted">Gerenciar assinatura ou ver benefícios</span>
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
+            </Link>
+          </div>
         </div>
-      </div>
 
-      {/* Menu Options Group 1 */}
-      <div className="flex flex-col bg-nav-card border border-nav-border rounded-lg overflow-hidden profile-reveal">
-        <div className="p-4 border-b border-nav-border/50 bg-[#121212]">
-          <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">
-            Configurações da Conta
-          </span>
-        </div>
-        
-        {/* Option: Meus Dados */}
-        <button 
-          onClick={() => setIsDataModalOpen(true)}
-          className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group w-full bg-transparent border-0"
-        >
-          <div className="flex items-center gap-3">
-            <User className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
-            <div>
-              <span className="text-sm font-semibold text-nav-text-light block">Meus Dados</span>
-              <span className="text-[10px] text-nav-text-muted">Nome, e-mail e telefone de contato</span>
-            </div>
-          </div>
-          <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
-        </button>
-
-        {/* Option: Preferências */}
-        <button 
-          onClick={() => setIsPrefsModalOpen(true)}
-          className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group w-full bg-transparent border-0"
-        >
-          <div className="flex items-center gap-3">
-            <Settings className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
-            <div>
-              <span className="text-sm font-semibold text-nav-text-light block">Preferências</span>
-              <span className="text-[10px] text-nav-text-muted">Barbeiro favorito e notificações push</span>
-            </div>
-          </div>
-          <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
-        </button>
-
-        {/* Option: Segurança */}
-        <button 
-          onClick={() => setIsSecurityModalOpen(true)}
-          className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors text-left cursor-pointer group w-full bg-transparent border-0"
-        >
-          <div className="flex items-center gap-3">
-            <Shield className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
-            <div>
-              <span className="text-sm font-semibold text-nav-text-light block">Segurança</span>
-              <span className="text-[10px] text-nav-text-muted">Alterar senha e autenticação</span>
-            </div>
-          </div>
-          <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
-        </button>
-      </div>
-
-      {/* Menu Options Group 2 */}
-      <div className="flex flex-col bg-nav-card border border-nav-border rounded-lg overflow-hidden profile-reveal">
-        <div className="p-4 border-b border-nav-border/50 bg-[#121212]">
-          <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">
-            Financeiro & Planos
-          </span>
-        </div>
-
-        <Link href="/clube-vip" className="flex items-center justify-between p-4 hover:bg-[#151515] transition-colors border-b border-nav-border/30 text-left cursor-pointer group">
-          <div className="flex items-center gap-3">
-            <CreditCard className="w-4 h-4 text-nav-gold group-hover:scale-110 transition-transform" />
-            <div>
-              <span className="text-sm font-semibold text-nav-text-light block">Clube VIP NavHub</span>
-              <span className="text-[10px] text-nav-text-muted">Gerenciar assinatura ou ver benefícios</span>
-            </div>
-          </div>
-          <ChevronRight className="w-4 h-4 text-nav-text-muted group-hover:text-nav-gold transition-colors" />
-        </Link>
-      </div>
-
-      {/* Logout Action */}
-      <div className="profile-reveal mt-2">
-        <button
-          onClick={handleLogout}
-          className="w-full py-3.5 border border-red-950/50 bg-red-950/10 hover:bg-red-900/20 text-red-400 hover:text-red-300 font-bold font-display rounded-md transition-all cursor-pointer flex items-center justify-center gap-2 active:scale-[0.98]"
-        >
-          <LogOut className="w-4 h-4" />
-          Sair da Conta
-        </button>
       </div>
 
       {/* ==================================== MODALS ==================================== */}
