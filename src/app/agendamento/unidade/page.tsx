@@ -46,8 +46,10 @@ export default function UnitSelectionPage() {
               onClick={() => handleUnitSelect(unit)}
               className={`unit-reveal-card bg-nav-card border rounded-lg overflow-hidden cursor-pointer transition-all duration-300 premium-glow-hover flex flex-col ${
                 isSelected
-                  ? 'border-nav-gold ring-1 ring-nav-gold/30'
-                  : 'border-nav-border'
+                  ? 'border-nav-gold ring-2 ring-nav-gold/50 opacity-100 scale-[1.01] shadow-[0_0_20px_rgba(229,176,92,0.15)]'
+                  : selectedUnit
+                    ? 'border-nav-border opacity-50 grayscale-[15%]'
+                    : 'border-nav-border opacity-100'
               }`}
             >
               <div className="h-44 w-full relative">

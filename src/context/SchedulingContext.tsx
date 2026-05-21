@@ -77,6 +77,20 @@ const mockUnits: Unit[] = [
     image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=400&auto=format&fit=crop',
     rating: '4.8',
   },
+  {
+    id: 'unit-3',
+    name: 'Nav Pedra Branca',
+    address: 'Av. Paulo Roberto Vidal, 123 - Pedra Branca',
+    image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=400&auto=format&fit=crop',
+    rating: '4.9',
+  },
+  {
+    id: 'unit-4',
+    name: 'Nav Bela Vista',
+    address: 'Rua José Cosme Pamplona, 1447 - Bela Vista',
+    image: 'https://images.unsplash.com/photo-1517832606589-7a598abd0cf6?q=80&w=400&auto=format&fit=crop',
+    rating: '4.7',
+  },
 ];
 
 const mockServices: Service[] = [
@@ -113,23 +127,37 @@ const mockServices: Service[] = [
 const mockBarbers: Barber[] = [
   {
     id: 'barber-1',
-    name: 'Jefhe Santos',
-    role: 'Barbeiro Sênior / Specialist',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop',
-    rating: '5.0',
-  },
-  {
-    id: 'barber-2',
-    name: 'Maicon',
-    role: 'Especialista em Degradê',
-    image: 'https://images.unsplash.com/photo-1620122303020-43ec4b6cf7f8?q=80&w=300&auto=format&fit=crop',
+    name: 'Daniel Quirino',
+    role: 'Barbeiro Master / Visagista',
+    image: 'https://ui-avatars.com/api/?name=Daniel+Quirino&background=E5B05C&color=000&bold=true&size=128',
     rating: '4.9',
   },
   {
+    id: 'barber-2',
+    name: 'Igor Araujo',
+    role: 'Especialista em Degradê',
+    image: 'https://ui-avatars.com/api/?name=Igor+Araujo&background=E5B05C&color=000&bold=true&size=128',
+    rating: '4.8',
+  },
+  {
     id: 'barber-3',
-    name: 'Felipe Melo',
-    role: 'Visagista / Beard Designer',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&auto=format&fit=crop',
+    name: 'Jefherson',
+    role: 'Barbeiro Sênior / Specialist',
+    image: 'https://ui-avatars.com/api/?name=Jefherson&background=E5B05C&color=000&bold=true&size=128',
+    rating: '5.0',
+  },
+  {
+    id: 'barber-4',
+    name: 'Maicon Lodetti',
+    role: 'Especialista em Barba / Beard Stylist',
+    image: 'https://ui-avatars.com/api/?name=Maicon+Lodetti&background=E5B05C&color=000&bold=true&size=128',
+    rating: '4.9',
+  },
+  {
+    id: 'barber-5',
+    name: 'Mauricio Garcia',
+    role: 'Cortes Clássicos & Modernos',
+    image: 'https://ui-avatars.com/api/?name=Mauricio+Garcia&background=E5B05C&color=000&bold=true&size=128',
     rating: '4.9',
   },
 ];

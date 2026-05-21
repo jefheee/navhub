@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling, Unit } from '@/context/SchedulingContext';
 import { Calendar, MapPin, Sparkles, ChevronRight, Scissors, AlertCircle } from 'lucide-react';
+import Link from 'next/link';
 import gsap from 'gsap';
 
 export default function HomePage() {
@@ -179,7 +180,10 @@ export default function HomePage() {
         
         <div className="grid grid-cols-2 gap-3">
           {/* Basic Plan */}
-          <div className="bg-nav-card border border-nav-border rounded-lg p-4 flex flex-col justify-between relative overflow-hidden">
+          <Link 
+            href="/clube-vip"
+            className="bg-nav-card border border-nav-border rounded-lg p-4 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:border-nav-gold/30 hover:-translate-y-0.5 transition-all duration-200"
+          >
             <div>
               <div className="flex items-center gap-1 text-[9px] text-nav-text-muted uppercase tracking-widest mb-1.5">
                 <Scissors className="w-3 h-3 text-nav-gold" />
@@ -189,7 +193,7 @@ export default function HomePage() {
                 Plano Barber
               </h4>
               <p className="text-2xl font-black text-nav-text-light font-display">
-                R$ 80<span className="text-xs font-normal text-nav-text-muted">/mês</span>
+                R$ 39,90<span className="text-xs font-normal text-nav-text-muted">/mês</span>
               </p>
               <ul className="text-[10px] text-nav-text-muted space-y-1.5 mt-3">
                 <li>• 2 Cortes inclusos</li>
@@ -197,14 +201,17 @@ export default function HomePage() {
                 <li>• Bebida cortesia</li>
               </ul>
             </div>
-            <button className="mt-4 py-1.5 w-full bg-neutral-900 border border-[#333] hover:border-nav-gold/50 text-nav-text-light hover:text-nav-gold text-[10px] font-semibold rounded transition-all cursor-pointer">
+            <div className="mt-4 py-1.5 w-full bg-neutral-900 border border-[#333] text-nav-text-light text-[10px] font-semibold rounded text-center">
               Assinar Plano
-            </button>
-          </div>
+            </div>
+          </Link>
 
           {/* Premium Plan */}
-          <div className="bg-nav-card border border-nav-gold/30 rounded-lg p-4 flex flex-col justify-between relative overflow-hidden premium-glow">
-            <div className="absolute top-0 right-0 bg-nav-gold text-black text-[8px] uppercase tracking-widest font-black py-0.5 px-3 rotate-45 translate-x-3 translate-y-1 select-none">
+          <Link
+            href="/clube-vip"
+            className="bg-nav-card border border-nav-gold/30 rounded-lg p-4 flex flex-col justify-between relative overflow-hidden premium-glow cursor-pointer hover:border-nav-gold/60 hover:-translate-y-0.5 transition-all duration-200"
+          >
+            <div className="absolute top-0 right-0 bg-nav-gold text-black text-[8px] uppercase tracking-widest font-black py-0.5 px-3 rotate-45 translate-x-3 translate-y-1 select-none font-display">
               VIP
             </div>
             <div>
@@ -216,7 +223,7 @@ export default function HomePage() {
                 Nav Premium
               </h4>
               <p className="text-2xl font-black text-nav-gold font-display">
-                R$ 150<span className="text-xs font-normal text-nav-text-muted">/mês</span>
+                R$ 79,90<span className="text-xs font-normal text-nav-text-muted">/mês</span>
               </p>
               <ul className="text-[10px] text-nav-text-light/95 space-y-1.5 mt-3">
                 <li>• Cortes ilimitados</li>
@@ -225,10 +232,10 @@ export default function HomePage() {
                 <li>• Chopp duplo grátis</li>
               </ul>
             </div>
-            <button className="mt-4 py-1.5 w-full bg-nav-gold text-black hover:bg-yellow-500 text-[10px] font-bold rounded transition-colors cursor-pointer">
+            <div className="mt-4 py-1.5 w-full bg-nav-gold text-black text-[10px] font-bold rounded text-center font-display">
               Assinar Premium
-            </button>
-          </div>
+            </div>
+          </Link>
         </div>
       </section>
 

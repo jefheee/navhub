@@ -49,9 +49,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${outfit.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="bg-background text-foreground font-sans min-h-full flex flex-col no-scrollbar">
+      <body className="bg-black text-foreground font-sans min-h-screen flex flex-col no-scrollbar overflow-x-hidden">
         <SchedulingProvider>
-          <div className="flex-1 flex flex-col w-full max-w-md mx-auto relative bg-[#0D0D0D] border-x border-[#1A1A1A] min-h-screen shadow-2xl pb-24">
+          <div className="flex-1 flex flex-col w-full max-w-md mx-auto relative bg-[#0D0D0D] border-x border-[#222] min-h-screen shadow-[0_0_50px_rgba(0,0,0,0.8)] pb-24">
             <Header />
             <main className="flex-1 flex flex-col px-5 py-2">
               {children}

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { ArrowLeft, Sparkles, Scissors, MapPin, Calendar, CheckSquare } from 'lucide-react';
 
 export function Header() {
@@ -38,13 +39,13 @@ export function Header() {
           <h1 className="text-2xl font-bold font-display text-nav-text-light">Olá, Daniel</h1>
           <p className="text-xs text-nav-text-muted">Seja bem-vindo de volta</p>
         </div>
-        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-nav-gold/30 premium-glow">
+        <Link href="/perfil" className="w-12 h-12 rounded-full overflow-hidden border-2 border-nav-gold/30 premium-glow cursor-pointer active:scale-95 transition-transform block">
           <img
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop"
             alt="Daniel Profile"
             className="w-full h-full object-cover"
           />
-        </div>
+        </Link>
       </header>
     );
   }
