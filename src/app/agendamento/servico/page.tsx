@@ -19,7 +19,13 @@ export default function ServiceSelectionPage() {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
+  const activeAppointments = appointments
+    .filter(appt => appt.status === 'scheduled')
+    .sort((a, b) => {
+      const dateTimeA = new Date(`${a.date}T${a.time}`);
+      const dateTimeB = new Date(`${b.date}T${b.time}`);
+      return dateTimeA.getTime() - dateTimeB.getTime();
+    });
 
   // Redirect if no unit selected
   useEffect(() => {

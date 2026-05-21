@@ -12,7 +12,13 @@ export default function UnitSelectionPage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
-  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
+  const activeAppointments = appointments
+    .filter(appt => appt.status === 'scheduled')
+    .sort((a, b) => {
+      const dateTimeA = new Date(`${a.date}T${a.time}`);
+      const dateTimeB = new Date(`${b.date}T${b.time}`);
+      return dateTimeA.getTime() - dateTimeB.getTime();
+    });
 
   useEffect(() => {
     if (!isAuthenticated) {
@@ -103,7 +109,7 @@ export default function UnitSelectionPage() {
                   </div>
                 )}
                 {!imageErrors[unit.id] && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
                 )}
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                   <div>

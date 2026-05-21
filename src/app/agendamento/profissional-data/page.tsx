@@ -4,7 +4,7 @@ import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
 import { BarberSelect } from '@/components/BarberSelect';
-import { Check, CalendarDays, Clock, Sparkles } from 'lucide-react';
+import { Check, CalendarDays, Clock, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function ProfessionalDataPage() {
@@ -24,7 +24,15 @@ export default function ProfessionalDataPage() {
 
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
+  const activeAppointments = useMemo(() => {
+    return [...appointments]
+      .filter(appt => appt.status === 'scheduled')
+      .sort((a, b) => {
+        const dateTimeA = new Date(`${a.date}T${a.time}`);
+        const dateTimeB = new Date(`${b.date}T${b.time}`);
+        return dateTimeA.getTime() - dateTimeB.getTime();
+      });
+  }, [appointments]);
 
   // Calendar dragging state for desktop mouse drag
   const calendarRef = useRef<HTMLDivElement>(null);
@@ -61,6 +69,15 @@ export default function ProfessionalDataPage() {
   const handleDayClick = (dateString: string) => {
     if (calDragDistance.current > 10) return;
     setSelectedDate(dateString);
+  };
+
+  const scrollCalendar = (direction: 'left' | 'right') => {
+    if (!calendarRef.current) return;
+    const scrollAmount = 240;
+    calendarRef.current.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    });
   };
 
   // Redirect if previous steps are missing
@@ -201,40 +218,62 @@ export default function ProfessionalDataPage() {
               )}
             </div>
 
-            <div
-              ref={calendarRef}
-              onMouseDown={handleCalMouseDown}
-              onMouseLeave={handleCalMouseLeave}
-              onMouseUp={handleCalMouseUp}
-              onMouseMove={handleCalMouseMove}
-              className={`flex gap-2.5 overflow-x-auto pb-2 px-1 -mx-4 px-4 snap-x no-scrollbar ${
-                isCalDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
-              }`}
-            >
-              {availableDays.map((day) => {
-                const isSelected = selectedDate === day.dateString;
-                return (
-                  <button
-                    key={day.dateString}
-                    onClick={() => handleDayClick(day.dateString)}
-                    className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center transition-all duration-200 ${
-                      isSelected
-                        ? 'border-nav-gold bg-nav-gold/10 text-nav-gold font-bold shadow-[0_0_8px_rgba(229,176,92,0.1)]'
-                        : 'border-nav-border bg-nav-card text-nav-text-light hover:border-neutral-700'
-                    }`}
-                  >
-                    <span className="text-[9px] uppercase tracking-wide text-nav-text-muted font-medium mb-1 font-display">
-                      {day.dayName}
-                    </span>
-                    <span className="text-md font-extrabold font-display leading-tight">
-                      {day.dayNum}
-                    </span>
-                    <span className="text-[8px] uppercase tracking-wider text-nav-text-muted font-semibold mt-1 font-display">
-                      {day.monthName}
-                    </span>
-                  </button>
-                );
-              })}
+            <div className="relative group/cal-carousel w-full">
+              {/* Left Arrow for Desktop */}
+              <button
+                type="button"
+                onClick={() => scrollCalendar('left')}
+                className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-[#161616]/90 border border-nav-border text-nav-gold hover:bg-neutral-800 hover:text-white transition-all cursor-pointer shadow-[0_0_8px_rgba(0,0,0,0.5)] active:scale-95"
+                title="Anterior"
+              >
+                <ChevronLeft className="w-4 h-4 stroke-[2.5]" />
+              </button>
+
+              <div
+                ref={calendarRef}
+                onMouseDown={handleCalMouseDown}
+                onMouseLeave={handleCalMouseLeave}
+                onMouseUp={handleCalMouseUp}
+                onMouseMove={handleCalMouseMove}
+                className={`flex gap-2.5 overflow-x-auto pb-2 px-4 snap-x no-scrollbar ${
+                  isCalDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
+                }`}
+              >
+                {availableDays.map((day) => {
+                  const isSelected = selectedDate === day.dateString;
+                  return (
+                    <button
+                      key={day.dateString}
+                      onClick={() => handleDayClick(day.dateString)}
+                      className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center transition-all duration-200 ${
+                        isSelected
+                          ? 'border-nav-gold bg-nav-gold/10 text-nav-gold font-bold shadow-[0_0_8px_rgba(229,176,92,0.1)]'
+                          : 'border-nav-border bg-nav-card text-nav-text-light hover:border-neutral-700'
+                      }`}
+                    >
+                      <span className="text-[9px] uppercase tracking-wide text-nav-text-muted font-medium mb-1 font-display">
+                        {day.dayName}
+                      </span>
+                      <span className="text-md font-extrabold font-display leading-tight">
+                        {day.dayNum}
+                      </span>
+                      <span className="text-[8px] uppercase tracking-wider text-nav-text-muted font-semibold mt-1 font-display">
+                        {day.monthName}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Right Arrow for Desktop */}
+              <button
+                type="button"
+                onClick={() => scrollCalendar('right')}
+                className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-[#161616]/90 border border-nav-border text-nav-gold hover:bg-neutral-800 hover:text-white transition-all cursor-pointer shadow-[0_0_8px_rgba(0,0,0,0.5)] active:scale-95"
+                title="Próximo"
+              >
+                <ChevronRight className="w-4 h-4 stroke-[2.5]" />
+              </button>
             </div>
           </section>
         </div>
@@ -257,14 +296,21 @@ export default function ProfessionalDataPage() {
             <div className="grid grid-cols-4 gap-2">
               {timeSlots.map((time) => {
                 const isSelected = selectedTime === time;
+                const hasConflict = appointments.some(
+                  appt => appt.status === 'scheduled' && appt.date === selectedDate && appt.time === time
+                );
+
                 return (
                   <button
                     key={time}
-                    onClick={() => setSelectedTime(time)}
-                    className={`py-2 text-xs font-semibold rounded font-display transition-all cursor-pointer border ${
-                      isSelected
-                        ? 'bg-nav-gold border-nav-gold text-black font-bold shadow-[0_0_8px_rgba(229,176,92,0.15)]'
-                        : 'bg-nav-card border-nav-border text-nav-text-light hover:border-neutral-700 hover:bg-[#151515]'
+                    disabled={hasConflict}
+                    onClick={() => !hasConflict && setSelectedTime(time)}
+                    className={`py-2 text-xs font-semibold rounded font-display transition-all border ${
+                      hasConflict
+                        ? 'bg-[#151515] border-nav-border text-neutral-600 cursor-not-allowed opacity-30 line-through'
+                        : isSelected
+                          ? 'bg-nav-gold border-nav-gold text-black font-bold shadow-[0_0_8px_rgba(229,176,92,0.15)]'
+                          : 'bg-nav-card border-nav-border text-nav-text-light hover:border-neutral-700 hover:bg-[#151515] cursor-pointer'
                     }`}
                   >
                     {time}

@@ -14,9 +14,14 @@ export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   
-  // Find active scheduled appointments
-  // Find active scheduled appointments
-  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
+  // Find active scheduled appointments and sort chronologically ascending
+  const activeAppointments = appointments
+    .filter(appt => appt.status === 'scheduled')
+    .sort((a, b) => {
+      const dateTimeA = new Date(`${a.date}T${a.time}`);
+      const dateTimeB = new Date(`${b.date}T${b.time}`);
+      return dateTimeA.getTime() - dateTimeB.getTime();
+    });
 
   useEffect(() => {
     // GSAP reveal animations for dashboard elements
@@ -252,6 +257,83 @@ export default function HomePage() {
               Assinar Premium
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* Institutional Sections */}
+      <section className="reveal-item mt-6 border-t border-nav-border/30 pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Sobre a NavHub */}
+          <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-col justify-between hover:border-nav-gold/30 transition-all duration-200">
+            <div>
+              <div className="flex items-center gap-2 text-nav-gold mb-3">
+                <Scissors className="w-4 h-4" />
+                <h4 className="font-display font-bold text-sm uppercase tracking-wider">
+                  Sobre a NavHub
+                </h4>
+              </div>
+              <p className="text-xs text-nav-text-muted leading-relaxed">
+                A NavHub une estilo, precisão e tradição em um ambiente premium e moderno. Nosso foco é oferecer um atendimento de excelência com visagismo personalizado, garantindo que você tenha a melhor versão do seu visual pelas mãos dos barbeiros mais experientes.
+              </p>
+            </div>
+            <div className="mt-4 text-[10px] text-nav-gold font-semibold uppercase tracking-wider">
+              Estilo e Tradição
+            </div>
+          </div>
+
+          {/* Visite-nos */}
+          <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-col justify-between hover:border-nav-gold/30 transition-all duration-200">
+            <div>
+              <div className="flex items-center gap-2 text-nav-gold mb-3">
+                <MapPin className="w-4 h-4" />
+                <h4 className="font-display font-bold text-sm uppercase tracking-wider">
+                  Visite-nos
+                </h4>
+              </div>
+              <div className="space-y-3">
+                <div className="text-xs">
+                  <span className="font-bold text-nav-text-light block">Nav Pagani & Jardim Eldorado</span>
+                  <span className="text-nav-text-muted text-[11px] block">Av. Atílio Pagani, 270 / R. Eldorado, 45</span>
+                </div>
+                <div className="text-xs">
+                  <span className="font-bold text-nav-text-light block">Nav Pedra Branca & Bela Vista</span>
+                  <span className="text-nav-text-muted text-[11px] block">Av. Paulo R. Vidal, 123 / R. José C. Pamplona, 1447</span>
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 text-[10px] text-nav-gold font-semibold uppercase tracking-wider">
+              4 Unidades em Palhoça
+            </div>
+          </div>
+
+          {/* Horário de Atendimento */}
+          <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-col justify-between hover:border-nav-gold/30 transition-all duration-200">
+            <div>
+              <div className="flex items-center gap-2 text-nav-gold mb-3">
+                <Clock className="w-4 h-4" />
+                <h4 className="font-display font-bold text-sm uppercase tracking-wider">
+                  Horários
+                </h4>
+              </div>
+              <div className="space-y-2 text-xs">
+                <div className="flex justify-between border-b border-nav-border/30 pb-1.5">
+                  <span className="text-nav-text-muted">Segunda a Sexta</span>
+                  <span className="text-nav-text-light font-bold">09:00 às 20:00</span>
+                </div>
+                <div className="flex justify-between border-b border-nav-border/30 pb-1.5">
+                  <span className="text-nav-text-muted">Sábado</span>
+                  <span className="text-nav-text-light font-bold">09:00 às 18:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-nav-text-muted">Domingo</span>
+                  <span className="text-red-400 font-semibold">Fechado</span>
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 text-[10px] text-nav-gold font-semibold uppercase tracking-wider">
+              Atendimento Sem Hora Marcada se VIP
+            </div>
+          </div>
         </div>
       </section>
 

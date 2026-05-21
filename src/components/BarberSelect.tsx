@@ -17,6 +17,7 @@ export function BarberSelect({ barbers, selectedBarber, onSelect }: BarberSelect
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const dragDistance = useRef(0);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!containerRef.current) return;
@@ -81,6 +82,14 @@ export function BarberSelect({ barbers, selectedBarber, onSelect }: BarberSelect
       >
         {barbers.map((barber) => {
           const isSelected = selectedBarber?.id === barber.id;
+          const hasError = imageErrors[barber.id];
+          const initials = barber.name
+            .split(' ')
+            .map((n) => n[0])
+            .slice(0, 2)
+            .join('')
+            .toUpperCase();
+
           return (
             <div
               key={barber.id}
@@ -103,11 +112,18 @@ export function BarberSelect({ barbers, selectedBarber, onSelect }: BarberSelect
                   }`}
                   transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                 >
-                  <img
-                    src={barber.image}
-                    alt={barber.name}
-                    className="w-full h-full object-cover select-none pointer-events-none"
-                  />
+                  {!hasError ? (
+                    <img
+                      src={barber.image}
+                      alt={barber.name}
+                      className="w-full h-full object-cover select-none pointer-events-none"
+                      onError={() => setImageErrors((prev) => ({ ...prev, [barber.id]: true }))}
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-[#1F170E] to-[#121212] flex items-center justify-center text-nav-gold font-bold font-display text-lg border border-nav-gold/20 select-none">
+                      {initials}
+                    </div>
+                  )}
                   {isSelected && (
                     <div className="absolute inset-0 bg-nav-gold/10" />
                   )}

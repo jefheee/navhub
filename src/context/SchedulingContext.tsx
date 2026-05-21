@@ -92,21 +92,21 @@ const mockUnits: Unit[] = [
     id: 'unit-2',
     name: 'Nav Jardim Eldorado',
     address: 'R. Eldorado, 45 - Palhoça',
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80',
     rating: '4.8',
   },
   {
     id: 'unit-3',
     name: 'Nav Pedra Branca',
     address: 'Av. Paulo Roberto Vidal, 123 - Pedra Branca',
-    image: 'https://images.unsplash.com/photo-1605497746444-ac9dbd324ce8?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1527799863830-53a857053de1?auto=format&fit=crop&w=800&q=80',
     rating: '4.9',
   },
   {
     id: 'unit-4',
     name: 'Nav Bela Vista',
     address: 'Rua José Cosme Pamplona, 1447 - Bela Vista',
-    image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80',
     rating: '4.7',
   },
 ];
@@ -289,6 +289,14 @@ export function SchedulingProvider({ children }: { children: React.ReactNode }) 
 
   const createAppointment = () => {
     if (!selectedUnit || !selectedService || !selectedBarber || !selectedDate || !selectedTime) {
+      return null;
+    }
+
+    // Check for conflict (same date and time)
+    const hasConflict = appointments.some(
+      appt => appt.status === 'scheduled' && appt.date === selectedDate && appt.time === selectedTime
+    );
+    if (hasConflict) {
       return null;
     }
 
