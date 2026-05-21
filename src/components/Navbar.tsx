@@ -3,10 +3,12 @@
 import React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Home, CalendarDays, Sparkles, User } from 'lucide-react';
+import { useScheduling } from '@/context/SchedulingContext';
 
 export function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
+  const { userProfile, isAuthenticated } = useScheduling();
 
   const hideNavbarPaths = ['/agendamento/profissional-data'];
   if (hideNavbarPaths.includes(pathname)) {
@@ -35,8 +37,8 @@ export function Navbar() {
     {
       label: 'Perfil',
       icon: User,
-      path: '/perfil',
-      active: pathname === '/perfil',
+      path: isAuthenticated ? '/perfil' : '/login',
+      active: pathname === '/perfil' || pathname === '/login',
       customIcon: true,
     },
   ];
@@ -48,7 +50,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-[#0D0D0D]/85 backdrop-blur-md border-t border-[#1A1A1A] px-6 py-3 flex justify-between items-center z-50 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#0D0D0D]/90 backdrop-blur-md border-t border-[#1A1A1A] px-6 py-3 flex justify-between items-center z-50 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
       {navItems.map((item, idx) => {
         const Icon = item.icon;
         return (
@@ -64,7 +66,7 @@ export function Navbar() {
             {item.customIcon ? (
               <div className={`w-6 h-6 rounded-full overflow-hidden border ${item.active ? 'border-nav-gold' : 'border-neutral-700'}`}>
                 <img
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100&auto=format&fit=crop"
+                  src={isAuthenticated ? userProfile.avatar : "https://ui-avatars.com/api/?name=V&background=A3A3A3&color=000&bold=true"}
                   alt="Perfil"
                   className="w-full h-full object-cover"
                 />

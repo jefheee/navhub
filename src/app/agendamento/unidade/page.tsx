@@ -1,15 +1,23 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling, Unit } from '@/context/SchedulingContext';
-import { MapPin, Star, ChevronRight } from 'lucide-react';
+import { MapPin, Star, ChevronRight, Scissors } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function UnitSelectionPage() {
-  const { mockUnits, setSelectedUnit, selectedUnit } = useScheduling();
+  const { mockUnits, setSelectedUnit, selectedUnit, isAuthenticated } = useScheduling();
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+  const [loadedImages, setLoadedImages] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.replace('/login');
+    }
+  }, [isAuthenticated, router]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -52,12 +60,20 @@ export default function UnitSelectionPage() {
                     : 'border-nav-border opacity-100'
               }`}
             >
-              <div className="h-44 w-full relative">
-                <img
-                  src={unit.image}
-                  alt={unit.name}
-                  className="w-full h-full object-cover"
-                />
+              <div className="h-44 w-full relative bg-[#1A1A1A] flex items-center justify-center">
+                {!imageErrors[unit.id] ? (
+                  <img
+                    src={unit.image}
+                    alt={unit.name}
+                    className="w-full h-full object-cover select-none"
+                    onError={() => setImageErrors(prev => ({ ...prev, [unit.id]: true }))}
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-[#121212] flex flex-col items-center justify-center text-nav-gold gap-1">
+                    <MapPin className="w-8 h-8 opacity-45 animate-pulse" />
+                    <span className="text-[10px] text-nav-text-muted">Imagem indisponível</span>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                   <div>

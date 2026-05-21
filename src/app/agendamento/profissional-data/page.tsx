@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
 import { BarberSelect } from '@/components/BarberSelect';
@@ -23,6 +23,43 @@ export default function ProfessionalDataPage() {
 
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Calendar dragging state for desktop mouse drag
+  const calendarRef = useRef<HTMLDivElement>(null);
+  const [isCalDragging, setIsCalDragging] = useState(false);
+  const [calStartX, setCalStartX] = useState(0);
+  const [calScrollLeft, setCalScrollLeft] = useState(0);
+  const calDragDistance = useRef(0);
+
+  const handleCalMouseDown = (e: React.MouseEvent) => {
+    if (!calendarRef.current) return;
+    setIsCalDragging(true);
+    setCalStartX(e.pageX - calendarRef.current.offsetLeft);
+    setCalScrollLeft(calendarRef.current.scrollLeft);
+    calDragDistance.current = 0;
+  };
+
+  const handleCalMouseLeave = () => {
+    setIsCalDragging(false);
+  };
+
+  const handleCalMouseUp = () => {
+    setIsCalDragging(false);
+  };
+
+  const handleCalMouseMove = (e: React.MouseEvent) => {
+    if (!isCalDragging || !calendarRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - calendarRef.current.offsetLeft;
+    const walk = (x - calStartX) * 1.5;
+    calendarRef.current.scrollLeft = calScrollLeft - walk;
+    calDragDistance.current += Math.abs(e.movementX);
+  };
+
+  const handleDayClick = (dateString: string) => {
+    if (calDragDistance.current > 10) return;
+    setSelectedDate(dateString);
+  };
 
   // Redirect if previous steps are missing
   useEffect(() => {
@@ -133,14 +170,23 @@ export default function ProfessionalDataPage() {
           )}
         </div>
 
-        <div className="flex gap-2.5 overflow-x-auto pb-2 px-1 -mx-4 px-4 snap-x no-scrollbar">
+        <div
+          ref={calendarRef}
+          onMouseDown={handleCalMouseDown}
+          onMouseLeave={handleCalMouseLeave}
+          onMouseUp={handleCalMouseUp}
+          onMouseMove={handleCalMouseMove}
+          className={`flex gap-2.5 overflow-x-auto pb-2 px-1 -mx-4 px-4 snap-x no-scrollbar ${
+            isCalDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
+          }`}
+        >
           {availableDays.map((day) => {
             const isSelected = selectedDate === day.dateString;
             return (
               <button
                 key={day.dateString}
-                onClick={() => setSelectedDate(day.dateString)}
-                className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center cursor-pointer transition-all duration-200 ${
+                onClick={() => handleDayClick(day.dateString)}
+                className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center transition-all duration-200 ${
                   isSelected
                     ? 'border-nav-gold bg-nav-gold/10 text-nav-gold font-bold shadow-[0_0_8px_rgba(229,176,92,0.1)]'
                     : 'border-nav-border bg-nav-card text-nav-text-light hover:border-neutral-700'
@@ -195,7 +241,7 @@ export default function ProfessionalDataPage() {
       </section>
 
       {/* Floating Call to Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-md mx-auto p-4 bg-[#0D0D0D] border-t border-[#1A1A1A] z-[99] pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+      <div className="fixed bottom-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:max-w-6xl w-full p-4 bg-[#0D0D0D]/95 backdrop-blur-md border-t border-[#1A1A1A] z-[99] pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
         <button
           disabled={!isFormValid || isSubmitting}
           onClick={handleConfirm}

@@ -1,17 +1,18 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling, Unit } from '@/context/SchedulingContext';
-import { Calendar, MapPin, Sparkles, ChevronRight, Scissors, AlertCircle } from 'lucide-react';
+import { Calendar, MapPin, Sparkles, ChevronRight, Scissors, AlertCircle, Mail, Phone, Clock } from 'lucide-react';
 import Link from 'next/link';
 import gsap from 'gsap';
 
 export default function HomePage() {
-  const { appointments, cancelAppointment, setSelectedUnit, mockUnits } = useScheduling();
+  const { appointments, cancelAppointment, setSelectedUnit, mockUnits, isAuthenticated } = useScheduling();
   const router = useRouter();
   
   const containerRef = useRef<HTMLDivElement>(null);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   
   // Find active scheduled appointments
   const activeAppointment = appointments.find(appt => appt.status === 'scheduled');
@@ -32,8 +33,22 @@ export default function HomePage() {
   }, []);
 
   const handleSelectUnit = (unit: Unit) => {
+    if (!isAuthenticated) {
+      // Store unit selection in session/context first, so after login they go to servico
+      setSelectedUnit(unit);
+      router.push('/login');
+      return;
+    }
     setSelectedUnit(unit);
     router.push('/agendamento/servico');
+  };
+
+  const handleAgendarAgora = () => {
+    if (!isAuthenticated) {
+      router.push('/login');
+    } else {
+      router.push('/agendamento/unidade');
+    }
   };
 
   const formatDate = (dateStr: string) => {
@@ -114,7 +129,7 @@ export default function HomePage() {
               Escolha uma unidade abaixo para agendar o seu próximo corte.
             </p>
             <button 
-              onClick={() => router.push('/agendamento/unidade')}
+              onClick={handleAgendarAgora}
               className="px-5 py-2 bg-nav-gold text-black text-xs font-semibold rounded hover:bg-yellow-500 transition-colors cursor-pointer"
             >
               Agendar Agora
@@ -129,24 +144,34 @@ export default function HomePage() {
           <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
             Selecione a Unidade
           </h3>
-          <span className="text-[10px] text-nav-gold uppercase tracking-wider font-semibold flex items-center gap-0.5">
+          <span 
+            onClick={handleAgendarAgora}
+            className="text-[10px] text-nav-gold uppercase tracking-wider font-semibold flex items-center gap-0.5 cursor-pointer hover:underline"
+          >
             Ver todas <ChevronRight className="w-3 h-3" />
           </span>
         </div>
 
-        <div className="space-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
           {mockUnits.map((unit) => (
             <div
               key={unit.id}
               onClick={() => handleSelectUnit(unit)}
               className="bg-nav-card border border-nav-border rounded-lg overflow-hidden flex cursor-pointer hover:border-nav-gold/30 hover:-translate-y-0.5 transition-all duration-200 premium-glow-hover"
             >
-              <div className="w-24 h-24 shrink-0 relative">
-                <img
-                  src={unit.image}
-                  alt={unit.name}
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-24 h-24 shrink-0 relative bg-[#1A1A1A] flex items-center justify-center">
+                {!imageErrors[unit.id] ? (
+                  <img
+                    src={unit.image}
+                    alt={unit.name}
+                    className="w-full h-full object-cover select-none"
+                    onError={() => setImageErrors(prev => ({ ...prev, [unit.id]: true }))}
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-[#121212] flex items-center justify-center text-nav-gold">
+                    <MapPin className="w-6 h-6 opacity-45" />
+                  </div>
+                )}
                 <span className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-black/70 border border-nav-gold/30 text-[10px] text-nav-gold font-bold">
                   ★ {unit.rating}
                 </span>
@@ -178,7 +203,7 @@ export default function HomePage() {
           Assinaturas NavHub
         </h3>
         
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {/* Basic Plan */}
           <Link 
             href="/clube-vip?plan=basico"
@@ -236,6 +261,80 @@ export default function HomePage() {
               Assinar Premium
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* RODAPÉ INSTITUCIONAL (NavHub, Visite-nos, Horário de Atendimento) */}
+      <section className="reveal-item mt-6 border-t border-nav-border pt-8 pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          {/* About Section */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 text-nav-gold">
+              <Scissors className="w-4 h-4" />
+              <h4 className="font-display font-black text-lg uppercase tracking-tight">
+                Nav<span className="text-white">Hub</span>
+              </h4>
+            </div>
+            <p className="text-xs text-nav-text-muted leading-relaxed">
+              NavHub Barbearia - Estilo, precisão e tradição em um único lugar. O seu visual cuidado pelos melhores profissionais da região, com agilidade e excelência.
+            </p>
+          </div>
+
+          {/* Addresses Section */}
+          <div className="space-y-3">
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-nav-text-light">
+              Visite-nos
+            </h4>
+            <ul className="text-xs text-nav-text-muted space-y-2">
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
+                <span>Rua Valdemar Vieira, 123 - Jardim Eldorado</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
+                <span>Av. Atílio Pagani, 299 - Pagani</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
+                <span>Rua José Cosme Pamplona, 1447 - Bela Vista</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
+                <span>Avenida Paulo Roberto Vidal, 123 - Pedra Branca</span>
+              </li>
+              <li className="flex items-center gap-2 pt-1 border-t border-nav-border/30 mt-2">
+                <Mail className="w-4 h-4 text-nav-gold shrink-0" />
+                <a href="mailto:contato@navhub.com" className="hover:text-nav-gold transition-colors">contato@navhub.com</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Opening Hours Section */}
+          <div className="space-y-3">
+            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-nav-text-light">
+              Horário de Atendimento
+            </h4>
+            <div className="bg-nav-card border border-nav-border p-4 rounded-lg space-y-2">
+              <div className="flex items-center justify-between text-xs text-nav-text-light">
+                <span className="font-medium">Segunda a sexta</span>
+                <span className="text-nav-gold font-bold">09h - 20h</span>
+              </div>
+              <div className="flex items-center justify-between text-xs text-nav-text-light">
+                <span className="font-medium">Sábado</span>
+                <span className="text-nav-gold font-bold">09h - 18h</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-[10px] text-nav-text-muted pt-2 border-t border-nav-border/30 mt-2">
+                <Clock className="w-3.5 h-3.5 text-nav-gold shrink-0" />
+                <span>Fechado aos domingos e feriados.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Rights Bottom Bar */}
+        <div className="border-t border-nav-border/40 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-[10px] text-nav-text-muted">
+          <span>&copy; 2026 NavHub. Todos os direitos reservados.</span>
+          <span className="font-display font-semibold italic text-nav-gold/80">Pente com precisão de navalha.</span>
         </div>
       </section>
 

@@ -51,9 +51,9 @@ export default function RootLayout({
     >
       <body className="bg-[#050505] text-foreground font-sans min-h-screen flex flex-col no-scrollbar overflow-x-hidden">
         <SchedulingProvider>
-          <div className="flex-1 flex flex-col w-full md:max-w-md md:mx-auto relative bg-[#0D0D0D] md:border md:border-[#222] min-h-screen md:shadow-2xl pb-24">
+          <div className="flex-1 flex flex-col w-full bg-[#0D0D0D] min-h-screen pb-24 md:pb-0 relative">
             <Header />
-            <main className="flex-1 flex flex-col px-5 py-2">
+            <main className="flex-1 flex flex-col w-full max-w-6xl mx-auto px-5 py-4 md:py-8">
               {children}
             </main>
             <Navbar />

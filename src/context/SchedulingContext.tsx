@@ -2,6 +2,16 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
+export interface UserProfile {
+  name: string;
+  email: string;
+  phone: string;
+  avatar: string;
+  favoriteBarberId: string;
+  allowNotifications: boolean;
+  vipStatus: 'none' | 'basic' | 'premium';
+}
+
 export interface Unit {
   id: string;
   name: string;
@@ -38,6 +48,14 @@ export interface Appointment {
 }
 
 interface SchedulingContextType {
+  // Authentication & Profile
+  userProfile: UserProfile;
+  setUserProfile: (profile: UserProfile) => void;
+  isAuthenticated: boolean;
+  loginUser: (email: string, name?: string) => boolean;
+  signupUser: (email: string, name: string, phone: string) => boolean;
+  logoutUser: () => void;
+
   // Current selections
   selectedUnit: Unit | null;
   setSelectedUnit: (unit: Unit | null) => void;
@@ -67,28 +85,28 @@ const mockUnits: Unit[] = [
     id: 'unit-1',
     name: 'Nav Pagani',
     address: 'Av. Atílio Pagani, 270 - Palhoça',
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80',
     rating: '4.9',
   },
   {
     id: 'unit-2',
     name: 'Nav Jardim Eldorado',
     address: 'R. Eldorado, 45 - Palhoça',
-    image: 'https://images.unsplash.com/photo-1605497746444-ac9dbd34f196?q=80&w=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80',
     rating: '4.8',
   },
   {
     id: 'unit-3',
     name: 'Nav Pedra Branca',
     address: 'Av. Paulo Roberto Vidal, 123 - Pedra Branca',
-    image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80',
     rating: '4.9',
   },
   {
     id: 'unit-4',
     name: 'Nav Bela Vista',
     address: 'Rua José Cosme Pamplona, 1447 - Bela Vista',
-    image: 'https://images.unsplash.com/photo-1517832606589-7a598abd0cf6?q=80&w=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1512690196222-7c7d2990027f?auto=format&fit=crop&w=600&q=80',
     rating: '4.7',
   },
 ];
@@ -162,9 +180,24 @@ const mockBarbers: Barber[] = [
   },
 ];
 
+const defaultProfile: UserProfile = {
+  name: 'Daniel',
+  email: 'daniel@navhub.com.br',
+  phone: '(48) 99999-9999',
+  avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop',
+  favoriteBarberId: 'barber-1',
+  allowNotifications: true,
+  vipStatus: 'premium',
+};
+
 const SchedulingContext = createContext<SchedulingContextType | undefined>(undefined);
 
 export function SchedulingProvider({ children }: { children: React.ReactNode }) {
+  // Authentication & Profile States
+  const [userProfile, setUserProfileState] = useState<UserProfile>(defaultProfile);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+
+  // Selections
   const [selectedUnit, setSelectedUnit] = useState<Unit | null>(null);
   const [selectedService, setSelectedService] = useState<Service | null>(null);
   const [selectedBarber, setSelectedBarber] = useState<Barber | null>(null);
@@ -172,17 +205,79 @@ export function SchedulingProvider({ children }: { children: React.ReactNode }) 
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [appointments, setAppointments] = useState<Appointment[]>([]);
 
-  // Load appointments from localStorage
+  // Load from localStorage on mount
   useEffect(() => {
-    const saved = localStorage.getItem('navhub_appointments');
-    if (saved) {
+    // 1. Load Profile
+    const savedProfile = localStorage.getItem('navhub_user_profile');
+    if (savedProfile) {
       try {
-        setAppointments(JSON.parse(saved));
+        setUserProfileState(JSON.parse(savedProfile));
+      } catch (e) {
+        console.error('Failed to parse user profile', e);
+      }
+    }
+
+    // 2. Load Auth State (default to true for preview, but let's check localStorage first)
+    const savedAuth = localStorage.getItem('navhub_is_authenticated');
+    if (savedAuth !== null) {
+      setIsAuthenticated(savedAuth === 'true');
+    } else {
+      // Default to false so the user can experience the login page first!
+      setIsAuthenticated(false);
+    }
+
+    // 3. Load Appointments
+    const savedAppts = localStorage.getItem('navhub_appointments');
+    if (savedAppts) {
+      try {
+        setAppointments(JSON.parse(savedAppts));
       } catch (e) {
         console.error('Failed to load appointments', e);
       }
     }
   }, []);
+
+  const setUserProfile = (profile: UserProfile) => {
+    setUserProfileState(profile);
+    localStorage.setItem('navhub_user_profile', JSON.stringify(profile));
+  };
+
+  const loginUser = (email: string, name?: string) => {
+    // Simulate login
+    setIsAuthenticated(true);
+    localStorage.setItem('navhub_is_authenticated', 'true');
+    
+    // Update profile if name is provided (e.g. from login form)
+    const updated = {
+      ...userProfile,
+      email,
+      name: name || userProfile.name,
+    };
+    setUserProfile(updated);
+    return true;
+  };
+
+  const signupUser = (email: string, name: string, phone: string) => {
+    // Simulate register
+    setIsAuthenticated(true);
+    localStorage.setItem('navhub_is_authenticated', 'true');
+    
+    const updated: UserProfile = {
+      ...userProfile,
+      name,
+      email,
+      phone,
+      vipStatus: 'none', // starts as regular user
+    };
+    setUserProfile(updated);
+    return true;
+  };
+
+  const logoutUser = () => {
+    setIsAuthenticated(false);
+    localStorage.setItem('navhub_is_authenticated', 'false');
+    clearSelections();
+  };
 
   const clearSelections = () => {
     setSelectedUnit(null);
@@ -215,11 +310,6 @@ export function SchedulingProvider({ children }: { children: React.ReactNode }) 
   };
 
   const cancelAppointment = (id: string) => {
-    const updated = appointments.map((appt) =>
-      appt.id === id ? { ...appt, status: 'cancelled' as const } : appt
-    );
-    // Alternatively, remove it from list or keep it as cancelled
-    // Keeping it as cancelled allows us to show cancelled state or clear it. Let's filter out for simplicity
     const filtered = appointments.filter(appt => appt.id !== id);
     setAppointments(filtered);
     localStorage.setItem('navhub_appointments', JSON.stringify(filtered));
@@ -228,6 +318,12 @@ export function SchedulingProvider({ children }: { children: React.ReactNode }) 
   return (
     <SchedulingContext.Provider
       value={{
+        userProfile,
+        setUserProfile,
+        isAuthenticated,
+        loginUser,
+        signupUser,
+        logoutUser,
         selectedUnit,
         setSelectedUnit,
         selectedService,
