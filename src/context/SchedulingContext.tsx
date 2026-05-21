@@ -55,7 +55,7 @@ interface SchedulingContextType {
   createAppointment: () => Appointment | null;
   cancelAppointment: (id: string) => void;
   clearSelections: () => void;
-  
+
   // Helpers
   mockUnits: Unit[];
   mockServices: Service[];
@@ -113,7 +113,7 @@ const mockServices: Service[] = [
 const mockBarbers: Barber[] = [
   {
     id: 'barber-1',
-    name: 'Jefh Santos',
+    name: 'Jefhe Santos',
     role: 'Barbeiro Sênior / Specialist',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop',
     rating: '5.0',
@@ -187,7 +187,7 @@ export function SchedulingProvider({ children }: { children: React.ReactNode }) 
   };
 
   const cancelAppointment = (id: string) => {
-    const updated = appointments.map((appt) => 
+    const updated = appointments.map((appt) =>
       appt.id === id ? { ...appt, status: 'cancelled' as const } : appt
     );
     // Alternatively, remove it from list or keep it as cancelled
