@@ -74,7 +74,7 @@ const mockUnits: Unit[] = [
     id: 'unit-2',
     name: 'Nav Jardim Eldorado',
     address: 'R. Eldorado, 45 - Palhoça',
-    image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=400&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1605497746444-ac9dbd34f196?q=80&w=400&auto=format&fit=crop',
     rating: '4.8',
   },
   {

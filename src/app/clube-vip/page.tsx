@@ -1,17 +1,30 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useRef, useState, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { ArrowLeft, Check, Sparkles, Scissors, Beer, Trophy, Star } from 'lucide-react';
 import Link from 'next/link';
 import gsap from 'gsap';
 
-export default function ClubeVipPage() {
+function ClubeVipContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const containerRef = useRef<HTMLDivElement>(null);
-  const [selectedPlan, setSelectedPlan] = useState<'basico' | 'premium'>('premium');
+  
+  // Read target plan from query parameters, default to premium
+  const planParam = searchParams.get('plan');
+  const initialPlan = planParam === 'basico' ? 'basico' : 'premium';
+  
+  const [selectedPlan, setSelectedPlan] = useState<'basico' | 'premium'>(initialPlan);
   const [subscribing, setSubscribing] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  // Sync state if param changes
+  useEffect(() => {
+    if (planParam === 'basico' || planParam === 'premium') {
+      setSelectedPlan(planParam);
+    }
+  }, [planParam]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -40,7 +53,7 @@ export default function ClubeVipPage() {
   };
 
   return (
-    <div ref={containerRef} className="py-4 flex flex-col gap-6 pb-28 relative">
+    <div ref={containerRef} className="py-4 flex flex-col gap-6 pb-12 relative">
       {/* Custom Header */}
       <div className="flex items-center gap-4 vip-reveal">
         <Link
@@ -183,8 +196,8 @@ export default function ClubeVipPage() {
         </div>
       </div>
 
-      {/* Floating CTA bar */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-md mx-auto p-4 bg-[#0D0D0D] border-t border-[#1A1A1A] z-40 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+      {/* Inline CTA Button (Not fixed to avoid Navbar overlapping) */}
+      <div className="vip-reveal w-full mt-2">
         <button
           onClick={handleSubscribe}
           disabled={subscribing || success}
@@ -225,5 +238,17 @@ export default function ClubeVipPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ClubeVipPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex flex-col items-center justify-center min-h-[70vh] px-4 text-center">
+        <p className="text-sm text-nav-text-muted">Carregando Clube VIP...</p>
+      </div>
+    }>
+      <ClubeVipContent />
+    </Suspense>
   );
 }

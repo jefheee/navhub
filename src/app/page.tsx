@@ -181,7 +181,7 @@ export default function HomePage() {
         <div className="grid grid-cols-2 gap-3">
           {/* Basic Plan */}
           <Link 
-            href="/clube-vip"
+            href="/clube-vip?plan=basico"
             className="bg-nav-card border border-nav-border rounded-lg p-4 flex flex-col justify-between relative overflow-hidden cursor-pointer hover:border-nav-gold/30 hover:-translate-y-0.5 transition-all duration-200"
           >
             <div>
@@ -208,7 +208,7 @@ export default function HomePage() {
 
           {/* Premium Plan */}
           <Link
-            href="/clube-vip"
+            href="/clube-vip?plan=premium"
             className="bg-nav-card border border-nav-gold/30 rounded-lg p-4 flex flex-col justify-between relative overflow-hidden premium-glow cursor-pointer hover:border-nav-gold/60 hover:-translate-y-0.5 transition-all duration-200"
           >
             <div className="absolute top-0 right-0 bg-nav-gold text-black text-[8px] uppercase tracking-widest font-black py-0.5 px-3 rotate-45 translate-x-3 translate-y-1 select-none font-display">

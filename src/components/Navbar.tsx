@@ -8,6 +8,11 @@ export function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
+  const hideNavbarPaths = ['/agendamento/profissional-data'];
+  if (hideNavbarPaths.includes(pathname)) {
+    return null;
+  }
+
   const navItems = [
     {
       label: 'Início',
@@ -24,13 +29,14 @@ export function Navbar() {
     {
       label: 'Clube VIP',
       icon: Sparkles,
-      path: '/#assinaturas',
-      active: false,
+      path: '/clube-vip',
+      active: pathname === '/clube-vip',
     },
     {
       label: 'Perfil',
-      icon: '/#perfil',
-      active: false,
+      icon: User,
+      path: '/perfil',
+      active: pathname === '/perfil',
       customIcon: true,
     },
   ];

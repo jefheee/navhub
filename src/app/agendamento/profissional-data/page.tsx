@@ -195,7 +195,7 @@ export default function ProfessionalDataPage() {
       </section>
 
       {/* Floating Call to Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-md mx-auto p-4 bg-[#0D0D0D] border-t border-[#1A1A1A] z-50 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+      <div className="fixed bottom-0 left-0 right-0 max-w-md mx-auto p-4 bg-[#0D0D0D] border-t border-[#1A1A1A] z-[99] pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
         <button
           disabled={!isFormValid || isSubmitting}
           onClick={handleConfirm}
