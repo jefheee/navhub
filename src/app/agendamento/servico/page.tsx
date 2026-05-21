@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
 import { ServiceCard } from '@/components/ServiceCard';
-import { Sparkles, CalendarDays } from 'lucide-react';
+import { Sparkles, CalendarDays, Calendar } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function ServiceSelectionPage() {
@@ -12,11 +12,14 @@ export default function ServiceSelectionPage() {
     selectedUnit, 
     mockServices, 
     selectedService, 
-    setSelectedService 
+    setSelectedService,
+    appointments
   } = useScheduling();
   
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
 
   // Redirect if no unit selected
   useEffect(() => {
@@ -43,7 +46,31 @@ export default function ServiceSelectionPage() {
   if (!selectedUnit) return null;
 
   return (
-    <div ref={containerRef} className="py-2 flex flex-col gap-5 pb-8">
+    <div ref={containerRef} className="py-2 flex flex-col gap-6 pb-8">
+      {/* Active Appointments Banner */}
+      {activeAppointments.length > 0 && (
+        <div className="bg-nav-gold/10 border border-nav-gold/30 rounded-xl p-4 flex flex-col gap-3 srv-reveal-card">
+          <div className="flex items-center gap-2 text-nav-gold">
+            <Calendar className="w-4.5 h-4.5" />
+            <span className="text-xs font-bold uppercase tracking-wider font-display">
+              Seus Agendamentos Ativos
+            </span>
+          </div>
+          <div className="space-y-2">
+            {activeAppointments.map((appt) => (
+              <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center text-xs text-nav-text-light border-b border-nav-border/30 pb-2 last:border-0 last:pb-0 gap-1">
+                <div>
+                  <span className="font-semibold text-nav-gold">{appt.service.name}</span> em <span className="font-medium text-white">{appt.unit.name}</span>
+                </div>
+                <div className="text-nav-text-muted">
+                  <span className="capitalize">{appt.date.split('-')[2]}/{appt.date.split('-')[1]}</span> às <span className="text-nav-gold font-semibold">{appt.time}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Unit Selected Badge Info */}
       <div className="bg-nav-surface border border-nav-border rounded-lg p-3 flex justify-between items-center">
         <div>
@@ -67,7 +94,7 @@ export default function ServiceSelectionPage() {
       </div>
 
       {/* Services List */}
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {mockServices.map((service) => (
           <div key={service.id} className="srv-reveal-card">
             <ServiceCard

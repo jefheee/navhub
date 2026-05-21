@@ -19,10 +19,12 @@ export default function ProfessionalDataPage() {
     setSelectedTime,
     mockBarbers,
     createAppointment,
+    appointments,
   } = useScheduling();
 
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
 
   // Calendar dragging state for desktop mouse drag
   const calendarRef = useRef<HTMLDivElement>(null);
@@ -145,100 +147,135 @@ export default function ProfessionalDataPage() {
   return (
     <div className="py-2 pb-36 flex flex-col gap-6">
       
-      {/* Barber Carousel Section */}
-      <section className="section-reveal">
-        <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display mb-3">
-          1. Escolha o Profissional
-        </h3>
-        <BarberSelect
-          barbers={mockBarbers}
-          selectedBarber={selectedBarber}
-          onSelect={setSelectedBarber}
-        />
-      </section>
-
-      {/* Calendar Flat Section */}
-      <section className="section-reveal">
-        <div className="flex justify-between items-center mb-3">
-          <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
-            2. Escolha o Dia
-          </h3>
-          {selectedDate && (
-            <span className="text-[10px] text-nav-gold bg-nav-gold/10 px-2 py-0.5 rounded font-bold font-display border border-nav-gold/20">
-              {selectedDate.split('-')[2]}/{selectedDate.split('-')[1]}
+      {/* Active Appointments Banner */}
+      {activeAppointments.length > 0 && (
+        <div className="bg-nav-gold/10 border border-nav-gold/30 rounded-xl p-4 flex flex-col gap-3 section-reveal">
+          <div className="flex items-center gap-2 text-nav-gold">
+            <CalendarDays className="w-4.5 h-4.5" />
+            <span className="text-xs font-bold uppercase tracking-wider font-display">
+              Seus Agendamentos Ativos
             </span>
-          )}
+          </div>
+          <div className="space-y-2">
+            {activeAppointments.map((appt) => (
+              <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center text-xs text-nav-text-light border-b border-nav-border/30 pb-2 last:border-0 last:pb-0 gap-1">
+                <div>
+                  <span className="font-semibold text-nav-gold">{appt.service.name}</span> em <span className="font-medium text-white">{appt.unit.name}</span>
+                </div>
+                <div className="text-nav-text-muted">
+                  <span className="capitalize">{appt.date.split('-')[2]}/{appt.date.split('-')[1]}</span> às <span className="text-nav-gold font-semibold">{appt.time}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Responsive Columns on Desktop */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        
+        {/* Left Column: Barbers & Date */}
+        <div className="flex flex-col gap-6">
+          {/* Barber Carousel Section */}
+          <section className="section-reveal">
+            <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display mb-3">
+              1. Escolha o Profissional
+            </h3>
+            <BarberSelect
+              barbers={mockBarbers}
+              selectedBarber={selectedBarber}
+              onSelect={setSelectedBarber}
+            />
+          </section>
+
+          {/* Calendar Flat Section */}
+          <section className="section-reveal">
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
+                2. Escolha o Dia
+              </h3>
+              {selectedDate && (
+                <span className="text-[10px] text-nav-gold bg-nav-gold/10 px-2 py-0.5 rounded font-bold font-display border border-nav-gold/20">
+                  {selectedDate.split('-')[2]}/{selectedDate.split('-')[1]}
+                </span>
+              )}
+            </div>
+
+            <div
+              ref={calendarRef}
+              onMouseDown={handleCalMouseDown}
+              onMouseLeave={handleCalMouseLeave}
+              onMouseUp={handleCalMouseUp}
+              onMouseMove={handleCalMouseMove}
+              className={`flex gap-2.5 overflow-x-auto pb-2 px-1 -mx-4 px-4 snap-x no-scrollbar ${
+                isCalDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
+              }`}
+            >
+              {availableDays.map((day) => {
+                const isSelected = selectedDate === day.dateString;
+                return (
+                  <button
+                    key={day.dateString}
+                    onClick={() => handleDayClick(day.dateString)}
+                    className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center transition-all duration-200 ${
+                      isSelected
+                        ? 'border-nav-gold bg-nav-gold/10 text-nav-gold font-bold shadow-[0_0_8px_rgba(229,176,92,0.1)]'
+                        : 'border-nav-border bg-nav-card text-nav-text-light hover:border-neutral-700'
+                    }`}
+                  >
+                    <span className="text-[9px] uppercase tracking-wide text-nav-text-muted font-medium mb-1 font-display">
+                      {day.dayName}
+                    </span>
+                    <span className="text-md font-extrabold font-display leading-tight">
+                      {day.dayNum}
+                    </span>
+                    <span className="text-[8px] uppercase tracking-wider text-nav-text-muted font-semibold mt-1 font-display">
+                      {day.monthName}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
         </div>
 
-        <div
-          ref={calendarRef}
-          onMouseDown={handleCalMouseDown}
-          onMouseLeave={handleCalMouseLeave}
-          onMouseUp={handleCalMouseUp}
-          onMouseMove={handleCalMouseMove}
-          className={`flex gap-2.5 overflow-x-auto pb-2 px-1 -mx-4 px-4 snap-x no-scrollbar ${
-            isCalDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
-          }`}
-        >
-          {availableDays.map((day) => {
-            const isSelected = selectedDate === day.dateString;
-            return (
-              <button
-                key={day.dateString}
-                onClick={() => handleDayClick(day.dateString)}
-                className={`flex-none w-14 snap-center border rounded-lg py-3 flex flex-col items-center justify-center transition-all duration-200 ${
-                  isSelected
-                    ? 'border-nav-gold bg-nav-gold/10 text-nav-gold font-bold shadow-[0_0_8px_rgba(229,176,92,0.1)]'
-                    : 'border-nav-border bg-nav-card text-nav-text-light hover:border-neutral-700'
-                }`}
-              >
-                <span className="text-[9px] uppercase tracking-wide text-nav-text-muted font-medium mb-1 font-display">
-                  {day.dayName}
+        {/* Right Column: Time Selection */}
+        <div className="flex flex-col gap-6">
+          {/* Time Selection Grid */}
+          <section className="section-reveal">
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
+                3. Escolha o Horário
+              </h3>
+              {selectedTime && (
+                <span className="text-[10px] text-nav-gold bg-nav-gold/10 px-2 py-0.5 rounded font-bold font-display border border-nav-gold/20">
+                  {selectedTime}
                 </span>
-                <span className="text-md font-extrabold font-display leading-tight">
-                  {day.dayNum}
-                </span>
-                <span className="text-[8px] uppercase tracking-wider text-nav-text-muted font-semibold mt-1 font-display">
-                  {day.monthName}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </section>
+              )}
+            </div>
 
-      {/* Time Selection Grid */}
-      <section className="section-reveal">
-        <div className="flex justify-between items-center mb-3">
-          <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
-            3. Escolha o Horário
-          </h3>
-          {selectedTime && (
-            <span className="text-[10px] text-nav-gold bg-nav-gold/10 px-2 py-0.5 rounded font-bold font-display border border-nav-gold/20">
-              {selectedTime}
-            </span>
-          )}
+            <div className="grid grid-cols-4 gap-2">
+              {timeSlots.map((time) => {
+                const isSelected = selectedTime === time;
+                return (
+                  <button
+                    key={time}
+                    onClick={() => setSelectedTime(time)}
+                    className={`py-2 text-xs font-semibold rounded font-display transition-all cursor-pointer border ${
+                      isSelected
+                        ? 'bg-nav-gold border-nav-gold text-black font-bold shadow-[0_0_8px_rgba(229,176,92,0.15)]'
+                        : 'bg-nav-card border-nav-border text-nav-text-light hover:border-neutral-700 hover:bg-[#151515]'
+                    }`}
+                  >
+                    {time}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
         </div>
 
-        <div className="grid grid-cols-4 gap-2">
-          {timeSlots.map((time) => {
-            const isSelected = selectedTime === time;
-            return (
-              <button
-                key={time}
-                onClick={() => setSelectedTime(time)}
-                className={`py-2 text-xs font-semibold rounded font-display transition-all cursor-pointer border ${
-                  isSelected
-                    ? 'bg-nav-gold border-nav-gold text-black font-bold shadow-[0_0_8px_rgba(229,176,92,0.15)]'
-                    : 'bg-nav-card border-nav-border text-nav-text-light hover:border-neutral-700 hover:bg-[#151515]'
-                }`}
-              >
-                {time}
-              </button>
-            );
-          })}
-        </div>
-      </section>
+      </div>
 
       {/* Floating Call to Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:max-w-6xl w-full p-4 bg-[#0D0D0D]/95 backdrop-blur-md border-t border-[#1A1A1A] z-[99] pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">

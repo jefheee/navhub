@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Barber } from '@/context/SchedulingContext';
-import { Star } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface BarberSelectProps {
   barbers: Barber[];
@@ -48,69 +48,99 @@ export function BarberSelect({ barbers, selectedBarber, onSelect }: BarberSelect
     onSelect(barber);
   };
 
+  const scrollCarousel = (direction: 'left' | 'right') => {
+    if (!containerRef.current) return;
+    const scrollAmount = 240;
+    containerRef.current.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <div
-      ref={containerRef}
-      onMouseDown={handleMouseDown}
-      onMouseLeave={handleMouseLeave}
-      onMouseUp={handleMouseUp}
-      onMouseMove={handleMouseMove}
-      className={`flex gap-4 overflow-x-auto pb-4 pt-1 px-1 no-scrollbar -mx-4 px-4 snap-x ${
-        isDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
-      }`}
-    >
-      {barbers.map((barber) => {
-        const isSelected = selectedBarber?.id === barber.id;
-        return (
-          <div
-            key={barber.id}
-            onClick={() => handleBarberClick(barber)}
-            className={`flex-none w-[115px] snap-center bg-nav-card border rounded-lg p-3 text-center transition-all duration-300 ${
-              isSelected
-                ? 'border-nav-gold bg-[#161616] shadow-[0_0_12px_rgba(229,176,92,0.12)]'
-                : 'border-nav-border hover:border-neutral-700 hover:bg-[#121212]'
-            }`}
-          >
-            {/* Avatar Container with size animation */}
-            <div className="h-24 flex items-center justify-center mb-2">
-              <motion.div
-                animate={{
-                  width: isSelected ? 90 : 60,
-                  height: isSelected ? 90 : 60,
-                }}
-                className={`relative rounded-full overflow-hidden border-2 transition-colors duration-300 ${
-                  isSelected ? 'border-nav-gold' : 'border-neutral-800'
-                }`}
-                transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-              >
-                <img
-                  src={barber.image}
-                  alt={barber.name}
-                  className="w-full h-full object-cover select-none pointer-events-none"
-                />
-                {isSelected && (
-                  <div className="absolute inset-0 bg-nav-gold/10" />
-                )}
-              </motion.div>
-            </div>
+    <div className="relative group/carousel w-full">
+      {/* Left Arrow Button for Desktop */}
+      <button
+        onClick={() => scrollCarousel('left')}
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-[#161616]/90 border border-nav-border text-nav-gold hover:bg-neutral-800 hover:text-white transition-all cursor-pointer shadow-[0_0_10px_rgba(0,0,0,0.5)] hover:scale-105 active:scale-95"
+        title="Anterior"
+      >
+        <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
+      </button>
 
-            {/* Barber info */}
-            <h4 className={`text-xs font-bold truncate font-display ${
-              isSelected ? 'text-nav-gold' : 'text-nav-text-light'
-            }`}>
-              {barber.name}
-            </h4>
-            <p className="text-[9px] text-nav-text-muted truncate mt-0.5">
-              {barber.role.split(' / ')[0]}
-            </p>
+      {/* Scrollable Container */}
+      <div
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeave}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+        className={`flex gap-4 overflow-x-auto pb-4 pt-2 px-4 no-scrollbar scroll-smooth snap-x ${
+          isDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
+        }`}
+      >
+        {barbers.map((barber) => {
+          const isSelected = selectedBarber?.id === barber.id;
+          return (
+            <div
+              key={barber.id}
+              onClick={() => handleBarberClick(barber)}
+              className={`flex-none w-[140px] snap-center bg-nav-card border rounded-lg p-3.5 text-center transition-all duration-300 cursor-pointer select-none premium-glow-hover ${
+                isSelected
+                  ? 'border-nav-gold bg-[#161616] ring-1 ring-nav-gold/30 shadow-[0_0_15px_rgba(229,176,92,0.15)] scale-[1.02]'
+                  : 'border-nav-border hover:border-neutral-700 hover:bg-[#121212]'
+              }`}
+            >
+              {/* Avatar Container with size animation */}
+              <div className="h-28 flex items-center justify-center mb-2">
+                <motion.div
+                  animate={{
+                    width: isSelected ? 110 : 76,
+                    height: isSelected ? 110 : 76,
+                  }}
+                  className={`relative rounded-full overflow-hidden border-2 transition-colors duration-300 ${
+                    isSelected ? 'border-nav-gold' : 'border-neutral-800'
+                  }`}
+                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                >
+                  <img
+                    src={barber.image}
+                    alt={barber.name}
+                    className="w-full h-full object-cover select-none pointer-events-none"
+                  />
+                  {isSelected && (
+                    <div className="absolute inset-0 bg-nav-gold/10" />
+                  )}
+                </motion.div>
+              </div>
 
-            <div className="flex items-center justify-center gap-0.5 mt-1.5 text-[9px] font-bold text-nav-gold">
-              <Star className="w-2.5 h-2.5 fill-nav-gold text-nav-gold shrink-0" />
-              <span>{barber.rating}</span>
+              {/* Barber info */}
+              <h4 className={`text-xs font-bold truncate font-display ${
+                isSelected ? 'text-nav-gold' : 'text-nav-text-light'
+              }`}>
+                {barber.name}
+              </h4>
+              <p className="text-[9px] text-nav-text-muted truncate mt-0.5 font-medium">
+                {barber.role.split(' / ')[0]}
+              </p>
+
+              <div className="flex items-center justify-center gap-0.5 mt-2 text-[9px] font-bold text-nav-gold">
+                <Star className="w-2.5 h-2.5 fill-nav-gold text-nav-gold shrink-0" />
+                <span>{barber.rating}</span>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+
+      {/* Right Arrow Button for Desktop */}
+      <button
+        onClick={() => scrollCarousel('right')}
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-[#161616]/90 border border-nav-border text-nav-gold hover:bg-neutral-800 hover:text-white transition-all cursor-pointer shadow-[0_0_10px_rgba(0,0,0,0.5)] hover:scale-105 active:scale-95"
+        title="Próximo"
+      >
+        <ChevronRight className="w-5 h-5 stroke-[2.5]" />
+      </button>
     </div>
   );
 }

@@ -15,7 +15,8 @@ export default function HomePage() {
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   
   // Find active scheduled appointments
-  const activeAppointment = appointments.find(appt => appt.status === 'scheduled');
+  // Find active scheduled appointments
+  const activeAppointments = appointments.filter(appt => appt.status === 'scheduled');
 
   useEffect(() => {
     // GSAP reveal animations for dashboard elements
@@ -63,61 +64,65 @@ export default function HomePage() {
       {/* Appointment Section */}
       <section className="reveal-item">
         <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display mb-3">
-          Próximo Agendamento
+          Próximos Agendamentos
         </h3>
         
-        {activeAppointment ? (
-          <div className="bg-nav-card border border-nav-gold/30 rounded-lg p-5 premium-glow relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-nav-gold/5 rounded-bl-full pointer-events-none" />
-            
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <span className="text-xs text-nav-gold font-semibold uppercase tracking-wider font-display">
-                  Confirmado
-                </span>
-                <h4 className="text-lg font-bold text-nav-text-light font-display mt-0.5">
-                  {activeAppointment.service.name}
-                </h4>
-              </div>
-              <div className="text-right">
-                <p className="text-xl font-extrabold text-nav-gold font-display">
-                  R$ {activeAppointment.service.price}
-                </p>
-                <p className="text-[10px] text-nav-text-muted">
-                  {activeAppointment.service.duration}
-                </p>
-              </div>
-            </div>
+        {activeAppointments.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {activeAppointments.map((appt) => (
+              <div key={appt.id} className="bg-nav-card border border-nav-gold/30 rounded-lg p-5 premium-glow relative overflow-hidden flex flex-col justify-between">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-nav-gold/5 rounded-bl-full pointer-events-none" />
+                
+                <div>
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <span className="text-xs text-nav-gold font-semibold uppercase tracking-wider font-display">
+                        Confirmado
+                      </span>
+                      <h4 className="text-md font-bold text-nav-text-light font-display mt-0.5">
+                        {appt.service.name}
+                      </h4>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-base font-extrabold text-nav-gold font-display">
+                        R$ {appt.service.price}
+                      </p>
+                      <p className="text-[9px] text-nav-text-muted">
+                        {appt.service.duration}
+                      </p>
+                    </div>
+                  </div>
 
-            <div className="space-y-2 border-y border-[#222] py-3.5 my-3.5">
-              <div className="flex items-center gap-2.5 text-sm text-nav-text-light">
-                <MapPin className="w-4 h-4 text-nav-gold shrink-0" />
-                <span>{activeAppointment.unit.name}</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-sm text-nav-text-light">
-                <Calendar className="w-4 h-4 text-nav-gold shrink-0" />
-                <span className="capitalize">{formatDate(activeAppointment.date)} às {activeAppointment.time}</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-sm text-nav-text-light">
-                <div className="w-5 h-5 rounded-full overflow-hidden border border-nav-gold/20">
-                  <img
-                    src={activeAppointment.barber.image}
-                    alt={activeAppointment.barber.name}
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="space-y-2 border-t border-[#222] pt-3 mt-3 mb-4">
+                    <div className="flex items-center gap-2 text-xs text-nav-text-light">
+                      <MapPin className="w-3.5 h-3.5 text-nav-gold shrink-0" />
+                      <span>{appt.unit.name}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-nav-text-light">
+                      <Calendar className="w-3.5 h-3.5 text-nav-gold shrink-0" />
+                      <span className="capitalize">{formatDate(appt.date)} às {appt.time}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-nav-text-light">
+                      <div className="w-4 h-4 rounded-full overflow-hidden border border-nav-gold/20">
+                        <img
+                          src={appt.barber.image}
+                          alt={appt.barber.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <span>Profissional: <strong className="text-nav-gold">{appt.barber.name}</strong></span>
+                    </div>
+                  </div>
                 </div>
-                <span>Profissional: <strong className="text-nav-gold">{activeAppointment.barber.name}</strong></span>
-              </div>
-            </div>
 
-            <div className="flex gap-3">
-              <button 
-                onClick={() => cancelAppointment(activeAppointment.id)}
-                className="w-full py-2 bg-neutral-900 border border-red-500/30 text-red-400 text-xs font-semibold rounded hover:bg-red-500/10 hover:border-red-500 transition-all cursor-pointer"
-              >
-                Cancelar Agendamento
-              </button>
-            </div>
+                <button 
+                  onClick={() => cancelAppointment(appt.id)}
+                  className="w-full py-2 bg-neutral-900 border border-red-500/30 text-red-400 text-xs font-semibold rounded hover:bg-red-500/10 hover:border-red-500 transition-all cursor-pointer mt-2"
+                >
+                  Cancelar Agendamento
+                </button>
+              </div>
+            ))}
           </div>
         ) : (
           <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-col items-center text-center justify-center min-h-[140px]">
@@ -247,80 +252,6 @@ export default function HomePage() {
               Assinar Premium
             </div>
           </Link>
-        </div>
-      </section>
-
-      {/* RODAPÉ INSTITUCIONAL (NavHub, Visite-nos, Horário de Atendimento) */}
-      <section className="reveal-item mt-6 border-t border-nav-border pt-8 pb-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {/* About Section */}
-          <div className="space-y-3">
-            <div className="flex items-center gap-2 text-nav-gold">
-              <Scissors className="w-4 h-4" />
-              <h4 className="font-display font-black text-lg uppercase tracking-tight">
-                Nav<span className="text-white">Hub</span>
-              </h4>
-            </div>
-            <p className="text-xs text-nav-text-muted leading-relaxed">
-              NavHub Barbearia - Estilo, precisão e tradição em um único lugar. O seu visual cuidado pelos melhores profissionais da região, com agilidade e excelência.
-            </p>
-          </div>
-
-          {/* Addresses Section */}
-          <div className="space-y-3">
-            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-nav-text-light">
-              Visite-nos
-            </h4>
-            <ul className="text-xs text-nav-text-muted space-y-2">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
-                <span>Rua Valdemar Vieira, 123 - Jardim Eldorado</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
-                <span>Av. Atílio Pagani, 299 - Pagani</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
-                <span>Rua José Cosme Pamplona, 1447 - Bela Vista</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-nav-gold shrink-0 mt-0.5" />
-                <span>Avenida Paulo Roberto Vidal, 123 - Pedra Branca</span>
-              </li>
-              <li className="flex items-center gap-2 pt-1 border-t border-nav-border/30 mt-2">
-                <Mail className="w-4 h-4 text-nav-gold shrink-0" />
-                <a href="mailto:contato@navhub.com" className="hover:text-nav-gold transition-colors">contato@navhub.com</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Opening Hours Section */}
-          <div className="space-y-3">
-            <h4 className="font-display font-bold text-xs uppercase tracking-widest text-nav-text-light">
-              Horário de Atendimento
-            </h4>
-            <div className="bg-nav-card border border-nav-border p-4 rounded-lg space-y-2">
-              <div className="flex items-center justify-between text-xs text-nav-text-light">
-                <span className="font-medium">Segunda a sexta</span>
-                <span className="text-nav-gold font-bold">09h - 20h</span>
-              </div>
-              <div className="flex items-center justify-between text-xs text-nav-text-light">
-                <span className="font-medium">Sábado</span>
-                <span className="text-nav-gold font-bold">09h - 18h</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-[10px] text-nav-text-muted pt-2 border-t border-nav-border/30 mt-2">
-                <Clock className="w-3.5 h-3.5 text-nav-gold shrink-0" />
-                <span>Fechado aos domingos e feriados.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Rights Bottom Bar */}
-        <div className="border-t border-nav-border/40 mt-8 pt-4 flex flex-col sm:flex-row justify-between items-center gap-2 text-[10px] text-nav-text-muted">
-          <span>&copy; 2026 NavHub. Todos os direitos reservados.</span>
-          <span className="font-display font-semibold italic text-nav-gold/80">Pente com precisão de navalha.</span>
         </div>
       </section>
 

@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
-import { ArrowLeft, User, Settings, CreditCard, LogOut, ChevronRight, Shield, X, Check, Save, Camera, Bell, BellOff } from 'lucide-react';
+import { ArrowLeft, User, Settings, CreditCard, LogOut, ChevronRight, Shield, X, Check, Save, Camera, Bell, BellOff, Upload } from 'lucide-react';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -147,6 +147,30 @@ export default function ProfilePage() {
     setCustomAvatarUrl('');
     setIsPhotoModalOpen(false);
     showToast('Foto de perfil customizada alterada!');
+  };
+
+  const handleLocalAvatarChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 2 * 1024 * 1024) {
+      showToast('A imagem deve ter no máximo 2MB.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const base64Url = event.target?.result as string;
+      if (base64Url) {
+        setUserProfile({
+          ...userProfile,
+          avatar: base64Url,
+        });
+        setIsPhotoModalOpen(false);
+        showToast('Foto de perfil atualizada com sucesso!');
+      }
+    };
+    reader.readAsDataURL(file);
   };
 
   const handleLogout = () => {
@@ -667,6 +691,28 @@ export default function ProfilePage() {
                     );
                   })}
                 </div>
+              </div>
+
+              {/* Local File Upload Option */}
+              <div className="border-t border-nav-border/30 pt-4 mb-4">
+                <span className="text-xs font-semibold text-nav-text-muted font-display block mb-3 ml-0.5">
+                  Ou selecione do seu computador/celular:
+                </span>
+                <input
+                  type="file"
+                  id="local-avatar-input"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handleLocalAvatarChange}
+                />
+                <button
+                  type="button"
+                  onClick={() => document.getElementById('local-avatar-input')?.click()}
+                  className="w-full py-3 border border-nav-gold/30 bg-nav-gold/5 hover:bg-nav-gold/10 text-nav-gold font-bold font-display rounded-lg transition-all cursor-pointer flex items-center justify-center gap-2 active:scale-[0.98] text-xs"
+                >
+                  <Upload className="w-4 h-4" />
+                  Enviar Foto do Dispositivo
+                </button>
               </div>
 
               {/* Custom URL Input option */}
