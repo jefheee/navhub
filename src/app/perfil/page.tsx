@@ -3,15 +3,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
-import { ArrowLeft, User, Settings, CreditCard, LogOut, ChevronRight, Shield, X, Check, Save, Camera, Bell, BellOff, Upload } from 'lucide-react';
+import { ArrowLeft, User, Settings, CreditCard, LogOut, ChevronRight, Shield, X, Check, Save, Camera, Bell, BellOff, Upload, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ProfilePage() {
   const router = useRouter();
-  const { userProfile, setUserProfile, clearSelections, isAuthenticated, logoutUser, mockBarbers } = useScheduling();
+  const { userProfile, setUserProfile, clearSelections, isAuthenticated, logoutUser, mockBarbers, appointments, cancelAppointment } = useScheduling();
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const activeAppointments = appointments
+    .filter(appt => appt.status === 'scheduled')
+    .sort((a, b) => {
+      const dateTimeA = new Date(`${a.date}T${a.time}`);
+      const dateTimeB = new Date(`${b.date}T${b.time}`);
+      return dateTimeA.getTime() - dateTimeB.getTime();
+    });
 
   // Redirect if not authenticated
   useEffect(() => {
@@ -270,6 +278,42 @@ export default function ProfilePage() {
 
         {/* Right Column: Settings and Preferences */}
         <div className="md:col-span-8 flex flex-col gap-6 profile-reveal">
+          
+          {/* Active Appointments */}
+          {activeAppointments.length > 0 && (
+            <div className="flex flex-col bg-nav-card border border-nav-gold/30 rounded-lg overflow-hidden premium-glow">
+              <div className="p-4 border-b border-nav-gold/20 bg-nav-gold/5 flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-nav-gold" />
+                <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">
+                  Meus Agendamentos Ativos
+                </span>
+              </div>
+              <div className="p-4 flex flex-col gap-3">
+                {activeAppointments.map(appt => {
+                  const [year, month, day] = appt.date.split('-');
+                  const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
+                  const formattedDate = dateObj.toLocaleDateString('pt-BR', { weekday: 'short', day: 'numeric', month: 'short' });
+                  
+                  return (
+                    <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center p-3 border border-nav-border/50 rounded-lg bg-[#111] gap-3">
+                      <div>
+                        <span className="font-bold text-nav-gold text-sm block">{appt.service.name}</span>
+                        <span className="text-xs text-nav-text-light font-medium block mt-0.5">{appt.barber.name} • {appt.unit.name}</span>
+                        <span className="text-[11px] text-nav-text-muted mt-1 block capitalize">{formattedDate} às {appt.time}</span>
+                      </div>
+                      <button
+                        onClick={() => cancelAppointment(appt.id)}
+                        className="py-1.5 px-3 bg-red-950/20 text-red-400 border border-red-900/30 text-[10px] font-bold rounded hover:bg-red-900/40 transition-colors"
+                      >
+                        Cancelar
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Menu Options Group 1 */}
           <div className="flex flex-col bg-nav-card border border-nav-border rounded-lg overflow-hidden">
             <div className="p-4 border-b border-nav-border/50 bg-[#121212]">

@@ -162,7 +162,7 @@ export default function ProfessionalDataPage() {
   if (!selectedUnit || !selectedService) return null;
 
   return (
-    <div className="py-2 pb-36 flex flex-col gap-6">
+    <div className="py-2 pb-8 flex flex-col gap-6">
       
       {/* Active Appointments Banner */}
       {activeAppointments.length > 0 && (
@@ -328,14 +328,14 @@ export default function ProfessionalDataPage() {
 
       </div>
 
-      {/* Floating Call to Action Bar */}
-      <div className="fixed bottom-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:max-w-6xl w-full p-4 bg-[#0D0D0D]/95 backdrop-blur-md border-t border-[#1A1A1A] z-[99] pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+      {/* Call to Action Bar */}
+      <div className="mt-8 mb-4 w-full p-4 bg-nav-card border border-nav-border/50 rounded-xl shadow-[0_0_20px_rgba(229,176,92,0.05)]">
         <button
           disabled={!isFormValid || isSubmitting}
           onClick={handleConfirm}
-          className={`w-full py-3.5 flex items-center justify-center gap-2 font-bold font-display rounded-md transition-all cursor-pointer ${
+          className={`w-full py-4 flex items-center justify-center gap-2 font-bold font-display rounded-lg transition-all cursor-pointer ${
             isFormValid && !isSubmitting
-              ? 'bg-nav-gold text-black hover:bg-yellow-500 shadow-lg shadow-nav-gold/20 active:scale-[0.98]'
+              ? 'bg-nav-gold text-black hover:bg-yellow-500 shadow-[0_0_15px_rgba(229,176,92,0.2)] active:scale-[0.98]'
               : 'bg-neutral-800 text-neutral-500 border border-neutral-700 cursor-not-allowed'
           }`}
         >
