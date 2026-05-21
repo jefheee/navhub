@@ -28,13 +28,17 @@ export default function UnitSelectionPage() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.unit-reveal-card', {
-        opacity: 0,
-        y: 20,
-        stagger: 0.15,
-        duration: 0.5,
-        ease: 'power3.out',
-      });
+      gsap.fromTo('.unit-reveal-card', 
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.15,
+          duration: 0.5,
+          ease: 'power3.out',
+          clearProps: 'all'
+        }
+      );
     }, containerRef);
     return () => ctx.revert();
   }, []);
