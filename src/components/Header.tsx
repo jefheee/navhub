@@ -114,9 +114,9 @@ export function Header() {
         </div>
       </header>
 
-      {/* 2. MOBILE HEADERS (Visible only on mobile) */}
-      <div className="md:hidden w-full">
-        {pathname === '/' ? (
+      {/* 2. MOBILE HEADER FOR HOME PAGE */}
+      {pathname === '/' && (
+        <div className="md:hidden w-full">
           <header className="p-6 bg-gradient-to-b from-[#141414] to-transparent flex items-center justify-between border-b border-[#1A1A1A]/30">
             <div>
               <div className="flex items-center gap-1.5 text-nav-gold mb-1">
@@ -136,8 +136,13 @@ export function Header() {
               />
             </Link>
           </header>
-        ) : stepInfo ? (
-          <header className="p-5 bg-[#0D0D0D] border-b border-[#1A1A1A] sticky top-0 z-50 pwa-top">
+        </div>
+      )}
+
+      {/* 3. STEP HEADERS (Visible on both mobile and desktop when in scheduling steps) */}
+      {stepInfo && (
+        <div className="w-full max-w-6xl mx-auto px-5 pt-4">
+          <div className="bg-[#111111] border border-nav-border rounded-xl p-4 md:p-5">
             <div className="flex items-center justify-between mb-4">
               {stepInfo.step < 4 ? (
                 <button
@@ -152,10 +157,10 @@ export function Header() {
               )}
 
               <div className="text-center">
-                <span className="text-[10px] uppercase tracking-widest text-nav-gold font-bold font-display">
+                <span className="text-[10px] md:text-xs uppercase tracking-widest text-nav-gold font-bold font-display">
                   Passo {stepInfo.step} de 4
                 </span>
-                <h2 className="text-md font-semibold text-nav-text-light font-display">{stepInfo.title}</h2>
+                <h2 className="text-md md:text-lg font-semibold text-nav-text-light font-display">{stepInfo.title}</h2>
               </div>
 
               <div className="text-xs font-semibold px-2.5 py-1 rounded bg-[#E5B05C]/10 text-nav-gold border border-[#E5B05C]/20 font-display">
@@ -164,15 +169,15 @@ export function Header() {
             </div>
 
             {/* Stepper Progress Bar */}
-            <div className="w-full h-[3px] bg-nav-surface rounded-full overflow-hidden flex gap-0.5">
-              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 1 ? 'bg-nav-gold' : 'bg-neutral-800'}`} />
-              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 2 ? 'bg-nav-gold' : 'bg-neutral-800'}`} />
-              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 3 ? 'bg-nav-gold' : 'bg-neutral-800'}`} />
-              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 4 ? 'bg-nav-gold' : 'bg-neutral-800'}`} />
+            <div className="w-full h-[4px] bg-nav-surface rounded-full overflow-hidden flex gap-1">
+              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 1 ? 'bg-nav-gold' : 'bg-[#222]'}`} />
+              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 2 ? 'bg-nav-gold' : 'bg-[#222]'}`} />
+              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 3 ? 'bg-nav-gold' : 'bg-[#222]'}`} />
+              <div className={`h-full flex-1 transition-all duration-300 ${stepInfo.step >= 4 ? 'bg-nav-gold' : 'bg-[#222]'}`} />
             </div>
-          </header>
-        ) : null}
-      </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

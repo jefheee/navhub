@@ -75,8 +75,8 @@ export function BarberSelect({ barbers, selectedBarber, onSelect }: BarberSelect
             <div className="h-24 flex items-center justify-center mb-2">
               <motion.div
                 animate={{
-                  width: isSelected ? 80 : 60,
-                  height: isSelected ? 80 : 60,
+                  width: isSelected ? 90 : 60,
+                  height: isSelected ? 90 : 60,
                 }}
                 className={`relative rounded-full overflow-hidden border-2 transition-colors duration-300 ${
                   isSelected ? 'border-nav-gold' : 'border-neutral-800'

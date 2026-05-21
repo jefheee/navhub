@@ -21,7 +21,7 @@ export default function LoginPage() {
   // If already authenticated, redirect
   useEffect(() => {
     if (isAuthenticated) {
-      const redirectPath = selectedUnit ? '/agendamento/unidade' : '/';
+      const redirectPath = selectedUnit ? '/agendamento/servico' : '/';
       router.replace(redirectPath);
     }
   }, [isAuthenticated, selectedUnit, router]);
@@ -42,7 +42,7 @@ export default function LoginPage() {
       if (activeTab === 'entrar') {
         const success = loginUser(email, email.split('@')[0]);
         if (success) {
-          const redirectPath = selectedUnit ? '/agendamento/unidade' : '/';
+          const redirectPath = selectedUnit ? '/agendamento/servico' : '/';
           router.push(redirectPath);
         } else {
           setError('Credenciais inválidas.');
@@ -56,7 +56,7 @@ export default function LoginPage() {
         }
         const success = signupUser(email, nome, telefone);
         if (success) {
-          const redirectPath = selectedUnit ? '/agendamento/unidade' : '/';
+          const redirectPath = selectedUnit ? '/agendamento/servico' : '/';
           router.push(redirectPath);
         } else {
           setError('Erro ao criar conta.');
@@ -70,7 +70,7 @@ export default function LoginPage() {
     setIsLoading(true);
     setTimeout(() => {
       loginUser('daniel.google@gmail.com', 'Daniel Quirino');
-      const redirectPath = selectedUnit ? '/agendamento/unidade' : '/';
+      const redirectPath = selectedUnit ? '/agendamento/servico' : '/';
       router.push(redirectPath);
     }, 1200);
   };

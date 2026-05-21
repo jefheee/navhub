@@ -56,25 +56,33 @@ export default function UnitSelectionPage() {
                 isSelected
                   ? 'border-nav-gold ring-2 ring-nav-gold/50 opacity-100 scale-[1.01] shadow-[0_0_20px_rgba(229,176,92,0.15)]'
                   : selectedUnit
-                    ? 'border-nav-border opacity-50 grayscale-[15%]'
+                    ? 'border-nav-border opacity-75'
                     : 'border-nav-border opacity-100'
               }`}
             >
-              <div className="h-44 w-full relative bg-[#1A1A1A] flex items-center justify-center">
+              <div className="h-44 w-full relative bg-gradient-to-br from-[#1F170E] via-[#121212] to-[#0A0A0A] flex items-center justify-center overflow-hidden">
+                {/* Background Watermark/Pattern */}
+                <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+                  <Scissors className="w-24 h-24 text-nav-gold" />
+                </div>
+
                 {!imageErrors[unit.id] ? (
                   <img
                     src={unit.image}
                     alt={unit.name}
-                    className="w-full h-full object-cover select-none"
+                    className={`w-full h-full object-cover select-none transition-opacity duration-500 ${
+                      loadedImages[unit.id] ? 'opacity-100' : 'opacity-0'
+                    }`}
+                    onLoad={() => setLoadedImages(prev => ({ ...prev, [unit.id]: true }))}
                     onError={() => setImageErrors(prev => ({ ...prev, [unit.id]: true }))}
                   />
                 ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-[#121212] flex flex-col items-center justify-center text-nav-gold gap-1">
-                    <MapPin className="w-8 h-8 opacity-45 animate-pulse" />
-                    <span className="text-[10px] text-nav-text-muted">Imagem indisponível</span>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#261C10] to-[#121212] flex flex-col items-center justify-center text-nav-gold gap-1.5">
+                    <MapPin className="w-8 h-8 text-nav-gold/70" />
+                    <span className="text-[10px] text-nav-text-muted font-medium font-display">Imagem indisponível</span>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                   <div>
                     <h3 className="text-lg font-bold text-white font-display">

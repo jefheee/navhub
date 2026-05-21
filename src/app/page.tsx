@@ -157,40 +157,26 @@ export default function HomePage() {
             <div
               key={unit.id}
               onClick={() => handleSelectUnit(unit)}
-              className="bg-nav-card border border-nav-border rounded-lg overflow-hidden flex cursor-pointer hover:border-nav-gold/30 hover:-translate-y-0.5 transition-all duration-200 premium-glow-hover"
+              className="bg-nav-card border border-nav-border rounded-lg p-3.5 flex items-center cursor-pointer hover:border-nav-gold/50 hover:-translate-y-0.5 transition-all duration-200 premium-glow-hover"
             >
-              <div className="w-24 h-24 shrink-0 relative bg-[#1A1A1A] flex items-center justify-center">
-                {!imageErrors[unit.id] ? (
-                  <img
-                    src={unit.image}
-                    alt={unit.name}
-                    className="w-full h-full object-cover select-none"
-                    onError={() => setImageErrors(prev => ({ ...prev, [unit.id]: true }))}
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-[#121212] flex items-center justify-center text-nav-gold">
-                    <MapPin className="w-6 h-6 opacity-45" />
-                  </div>
-                )}
-                <span className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-black/70 border border-nav-gold/30 text-[10px] text-nav-gold font-bold">
-                  ★ {unit.rating}
-                </span>
+              {/* Gold rounded icon box on the left */}
+              <div className="w-12 h-12 rounded-xl bg-nav-gold flex items-center justify-center shrink-0 mr-3.5 shadow-[0_0_10px_rgba(229,176,92,0.15)]">
+                <MapPin className="w-5.5 h-5.5 text-black fill-black stroke-[2.5]" />
               </div>
-              <div className="p-3.5 flex flex-col justify-between flex-1">
-                <div>
-                  <h4 className="text-sm font-bold text-nav-text-light font-display">
-                    {unit.name}
-                  </h4>
-                  <p className="text-xs text-nav-text-muted flex items-center gap-1 mt-1">
-                    <MapPin className="w-3.5 h-3.5 text-nav-gold shrink-0" />
-                    <span className="truncate">{unit.address.split(' - ')[0]}</span>
-                  </p>
-                </div>
-                <div className="flex justify-end">
-                  <span className="text-[10px] bg-nav-gold/10 text-nav-gold border border-nav-gold/20 px-2 py-0.5 rounded font-semibold font-display">
-                    Agendar
-                  </span>
-                </div>
+              
+              {/* Unit Info in the center */}
+              <div className="flex-1 min-w-0">
+                <h4 className="text-sm font-extrabold text-nav-text-light font-display">
+                  {unit.name}
+                </h4>
+                <p className="text-xs text-nav-text-muted mt-1 truncate">
+                  {unit.address}
+                </p>
+              </div>
+
+              {/* Chevron arrow on the right */}
+              <div className="text-nav-text-muted group-hover:text-nav-gold transition-colors shrink-0 ml-3">
+                <ChevronRight className="w-5 h-5 text-nav-gold" />
               </div>
             </div>
           ))}
