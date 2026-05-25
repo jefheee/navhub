@@ -8,7 +8,7 @@ import Link from 'next/link';
 import gsap from 'gsap';
 
 export default function HomePage() {
-  const { appointments, cancelAppointment, setSelectedUnit, mockUnits, isAuthenticated } = useScheduling();
+  const { appointments, cancelAppointment, setSelectedUnit, mockUnits, isAuthenticated, userProfile } = useScheduling();
   const router = useRouter();
   
   const containerRef = useRef<HTMLDivElement>(null);
