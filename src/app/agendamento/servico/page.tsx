@@ -52,7 +52,7 @@ export default function ServiceSelectionPage() {
   if (!selectedUnit) return null;
 
   return (
-    <div ref={containerRef} className="py-2 flex flex-col gap-6 pb-8">
+    <div ref={containerRef} className="py-2 flex flex-col gap-6 pb-32">
       {/* Active Appointments Banner */}
       {activeAppointments.length > 0 && (
         <div className="bg-nav-gold/10 border border-nav-gold/30 rounded-xl p-4 flex flex-col gap-3 srv-reveal-card">
@@ -117,19 +117,19 @@ export default function ServiceSelectionPage() {
         ))}
       </div>
 
-      {/* Navigation Button */}
-      <div className="mt-4">
+      {/* Floating Call to Action Bar constrained to 430px */}
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-[calc(430px-2.5rem)] z-50 pwa-bottom">
         <button
           disabled={!selectedService}
           onClick={() => router.push('/agendamento/profissional-data')}
-          className={`w-full py-3.5 flex items-center justify-center gap-2 font-semibold font-display rounded-md transition-all cursor-pointer ${
+          className={`w-full py-4 flex items-center justify-center gap-2 font-bold font-display rounded-2xl shadow-2xl transition-all cursor-pointer ${
             selectedService
-              ? 'bg-[#E5B05C] text-black hover:bg-yellow-500 shadow-lg shadow-nav-gold/10 active:scale-[0.98]'
-              : 'bg-neutral-800 text-neutral-500 border border-neutral-700 cursor-not-allowed'
+              ? 'bg-nav-gold text-black hover:bg-yellow-500 hover:shadow-[0_0_20px_rgba(229,176,92,0.4)] active:scale-[0.98]'
+              : 'bg-neutral-800 text-neutral-500 border border-neutral-700 cursor-not-allowed opacity-90'
           }`}
         >
           <CalendarDays className="w-5 h-5" />
-          Continuar para Profissional & Data
+          <span>Continuar</span>
         </button>
       </div>
     </div>

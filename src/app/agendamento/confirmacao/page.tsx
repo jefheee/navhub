@@ -209,10 +209,10 @@ function ConfirmationContent() {
       </div>
 
       {/* Primary Action Button */}
-      <div className="confirm-fade-in w-full">
+      <div className="confirm-fade-in fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-[calc(430px-2.5rem)] z-50 pwa-bottom">
         <button
           onClick={handleReturnHome}
-          className="w-full bg-nav-gold text-black hover:bg-yellow-500 font-bold font-display rounded-md py-4 transition-colors cursor-pointer text-center text-sm shadow-lg shadow-nav-gold/15 active:scale-[0.99]"
+          className="w-full bg-nav-gold text-black hover:bg-yellow-500 font-bold font-display rounded-2xl py-4 transition-colors cursor-pointer text-center shadow-2xl hover:shadow-[0_0_20px_rgba(229,176,92,0.4)] active:scale-[0.98]"
         >
           Ver meus Agendamentos
         </button>
