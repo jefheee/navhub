@@ -52,9 +52,9 @@ export default function RootLayout({
     >
       <body className="bg-[#050505] text-foreground font-sans min-h-screen flex flex-col overflow-x-hidden">
         <SchedulingProvider>
-          <div className="flex-1 flex flex-col w-full bg-[#0D0D0D] min-h-screen pb-24 md:pb-0 relative">
+          <div className="flex-1 flex flex-col w-full max-w-[430px] mx-auto min-h-[100dvh] bg-[#0D0D0D] text-[#F5F5F5] relative shadow-2xl border-x border-[#222] overflow-x-hidden">
             <Header />
-            <main className="flex-1 flex flex-col w-full max-w-6xl mx-auto px-5 py-4 md:py-8">
+            <main className="flex-1 flex flex-col w-full px-5 py-4 pb-28">
               {children}
             </main>
             <Footer />

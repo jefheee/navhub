@@ -64,17 +64,37 @@ export default function HomePage() {
   };
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-6 py-2 pb-12">
+    <div ref={containerRef} className="flex flex-col gap-6 pb-12 w-full relative">
       
+      {/* Hero Background */}
+      <div className="absolute top-0 left-0 w-full h-[45vh] -z-10 overflow-hidden">
+        <img 
+          src="/hero.jpeg" 
+          alt="NavHub Hero" 
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/10 via-[#0D0D0D]/70 to-[#0D0D0D]" />
+      </div>
+
+      {/* Header/Greeting */}
+      <section className="reveal-item pt-8 mb-2">
+        <h2 className="text-2xl font-display font-bold text-nav-text-light">
+          Olá, <span className="text-nav-gold">{isAuthenticated ? userProfile.name : 'Visitante'}</span>
+        </h2>
+        <p className="text-nav-text-muted text-sm mt-1">
+          O estilo que define quem você é.
+        </p>
+      </section>
+
       {/* Appointment Section */}
       <section className="reveal-item">
         <div className="flex justify-between items-center mb-3">
-          <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
-            Próximos Agendamentos
+          <h3 className="text-xs uppercase tracking-widest text-nav-text-light font-bold font-display">
+            Seu Último Agendamento
           </h3>
           {activeAppointments.length > 0 && (
             <span className="text-[10px] bg-nav-gold/15 text-nav-gold border border-nav-gold/30 px-2.5 py-0.5 rounded-full font-bold font-display">
-              {activeAppointments.length === 1 ? '1 Agendamento Ativo' : `${activeAppointments.length} Agendamentos Ativos`}
+              {activeAppointments.length} Ativo{activeAppointments.length !== 1 ? 's' : ''}
             </span>
           )}
         </div>
