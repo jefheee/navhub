@@ -5,7 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useScheduling, Unit } from '@/context/SchedulingContext';
 import { Calendar, MapPin, Sparkles, ChevronRight, Scissors, AlertCircle, Mail, Phone, Clock } from 'lucide-react';
 import Link from 'next/link';
-import gsap from 'gsap';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function HomePage() {
   const { appointments, cancelAppointment, setSelectedUnit, mockUnits, isAuthenticated, userProfile } = useScheduling();
@@ -23,20 +24,18 @@ export default function HomePage() {
       return dateTimeA.getTime() - dateTimeB.getTime();
     });
 
-  useEffect(() => {
-    // GSAP reveal animations for dashboard elements
-    const ctx = gsap.context(() => {
-      gsap.from('.reveal-item', {
-        opacity: 0,
-        y: 20,
-        stagger: 0.1,
-        duration: 0.6,
-        ease: 'power3.out',
-      });
-    }, containerRef);
-    
-    return () => ctx.revert();
-  }, []);
+  const containerVariants: import('framer-motion').Variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants: import('framer-motion').Variants = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+  };
 
   const handleSelectUnit = (unit: Unit) => {
     if (!isAuthenticated) {
@@ -64,30 +63,33 @@ export default function HomePage() {
   };
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-6 pb-12 w-full relative">
+    <motion.div variants={containerVariants} initial="hidden" animate="show" className="flex flex-col gap-6 pb-12 w-full relative">
       
       {/* Hero Background */}
       <div className="absolute top-0 left-0 w-full h-[45vh] -z-10 overflow-hidden">
-        <img 
+        <Image 
           src="/hero.jpeg" 
           alt="NavHub Hero" 
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
+          priority={true}
+          fill
+          style={{ objectFit: 'cover' }}
+          className="opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/10 via-[#0D0D0D]/70 to-[#0D0D0D]" />
       </div>
 
       {/* Header/Greeting */}
-      <section className="reveal-item pt-8 mb-2">
+      <motion.section variants={itemVariants} className="pt-8 mb-2">
         <h2 className="text-2xl font-display font-bold text-nav-text-light">
           Olá, <span className="text-nav-gold">{isAuthenticated ? userProfile.name : 'Visitante'}</span>
         </h2>
         <p className="text-nav-text-muted text-sm mt-1">
           O estilo que define quem você é.
         </p>
-      </section>
+      </motion.section>
 
       {/* Appointment Section */}
-      <section className="reveal-item">
+      <motion.section variants={itemVariants}>
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xs uppercase tracking-widest text-nav-text-light font-bold font-display">
             Seu Último Agendamento
@@ -173,10 +175,10 @@ export default function HomePage() {
             </button>
           </div>
         )}
-      </section>
+      </motion.section>
 
       {/* Units List */}
-      <section className="reveal-item">
+      <motion.section variants={itemVariants}>
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
             Selecione a Unidade
@@ -218,10 +220,10 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* Subscription Cards (Assinaturas) */}
-      <section className="reveal-item" id="assinaturas">
+      <motion.section variants={itemVariants} id="assinaturas">
         <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display mb-3">
           Assinaturas NavHub
         </h3>
@@ -285,10 +287,10 @@ export default function HomePage() {
             </div>
           </Link>
         </div>
-      </section>
+      </motion.section>
 
       {/* Institutional Sections */}
-      <section className="reveal-item mt-6 border-t border-nav-border/30 pt-8">
+      <motion.section variants={itemVariants} className="mt-6 border-t border-nav-border/30 pt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Sobre a NavHub */}
           <div className="bg-nav-card border border-nav-border rounded-lg p-5 flex flex-col justify-between hover:border-nav-gold/30 transition-all duration-200">
@@ -362,8 +364,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-    </div>
+    </motion.div>
   );
 }
