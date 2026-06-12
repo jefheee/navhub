@@ -1,0 +1,12042 @@
+/* login-page */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #110F0E;
+
+
+/* Rectangle 5126 */
+
+position: absolute;
+width: 123px;
+height: 37px;
+left: 33px;
+top: 76px;
+
+background: #12100E;
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 412px;
+height: 248px;
+left: 0px;
+top: 0px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 412px;
+height: 695px;
+left: 0px;
+top: 221px;
+
+background: #12100E;
+border-radius: 16px 16px 0px 0px;
+
+
+/* Another Step login */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: calc(50% - 372px/2);
+top: 776px;
+
+/* Primary/0
+
+#FFFFFF
+*/
+background: #FFFFFF;
+border: 1px solid #EFF0F6;
+box-shadow: inset 0px -3px 6px rgba(244, 245, 250, 0.6);
+border-radius: 10px;
+
+
+/* google */
+
+width: 18px;
+height: 18px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vector */
+
+position: absolute;
+left: 50.9%;
+right: 6.25%;
+top: 42.03%;
+bottom: 16.85%;
+
+background: #4285F4;
+
+
+/* vector */
+
+position: absolute;
+left: 11.01%;
+right: 19.54%;
+top: 58.65%;
+bottom: 6.25%;
+
+background: #34A853;
+
+
+/* vector */
+
+position: absolute;
+left: 6.25%;
+right: 74.5%;
+top: 30.15%;
+bottom: 30.36%;
+
+background: #FBBC05;
+
+
+/* vector */
+
+position: absolute;
+left: 11.01%;
+right: 19.24%;
+top: 6.25%;
+bottom: 58.65%;
+
+background: #EB4335;
+
+
+/* Google */
+
+width: 161px;
+height: 20px;
+
+/* Body Small/Semibold
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable.
+*/
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 140%;
+/* idêntico à altura da caixa ou 20px */
+text-align: center;
+letter-spacing: -0.01em;
+
+/* Secondary/500 */
+color: #1A1C1E;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ou */
+
+position: absolute;
+width: 15px;
+height: 8px;
+left: calc(50% - 15px/2 + 0.5px);
+top: 752px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Tabbing */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2px;
+gap: 1px;
+
+position: absolute;
+width: 372px;
+height: 36px;
+left: 20px;
+top: 269px;
+
+background: #272421;
+border: 1px solid #34302C;
+box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.02);
+border-radius: 7px;
+
+
+/* Login */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 12px;
+
+width: 183.5px;
+height: 32px;
+
+background: #34302C;
+border: 1px solid rgba(52, 48, 44, 0.5);
+border-radius: 6px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Entrar */
+
+width: 37px;
+height: 10px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+/* ou 21px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Sign up */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 12px;
+
+width: 183.5px;
+height: 32px;
+
+border-radius: 7px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Criar Conta */
+
+width: 74px;
+height: 10px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+/* ou 21px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+letter-spacing: -0.02em;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Seja Bem Vindo! */
+
+position: absolute;
+width: 235px;
+height: 22px;
+left: calc(50% - 235px/2 - 68.5px);
+top: 147px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 51px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+
+/* Faça login para continuar seu agendamento. */
+
+position: absolute;
+width: 230px;
+height: 8px;
+left: calc(50% - 230px/2 - 71px);
+top: 181px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(68, 51, 18, 0.8);
+
+
+
+/* Group 21 */
+
+position: absolute;
+width: 372px;
+height: 168px;
+left: calc(50% - 372px/2);
+top: 337px;
+
+
+
+/* Email */
+
+position: absolute;
+width: 28px;
+height: 8px;
+left: 20px;
+top: 337px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 353px;
+
+background: #272421;
+border-radius: 10px;
+
+
+/* email123@gmail.com */
+
+position: absolute;
+width: 124px;
+height: 10px;
+left: 59px;
+top: 370px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #999999;
+
+
+
+/* Esqueceu sua Senha? */
+
+position: absolute;
+width: 113px;
+height: 8px;
+left: 279px;
+top: 497px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: #EEB74F;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 372px;
+height: 60px;
+left: calc(50% - 372px/2);
+top: 413px;
+
+
+
+/* Senha */
+
+position: absolute;
+width: 32px;
+height: 8px;
+left: 20px;
+top: 413px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 429px;
+
+background: #272421;
+border-radius: 10px;
+
+
+/* ****** */
+
+position: absolute;
+width: 35px;
+height: 10px;
+left: 53px;
+top: 446px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #999999;
+
+
+
+/* ChatGPT Image 12 de jun. de 2026, 10_40_46 2 */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 67px;
+
+background: url(ChatGPT Image 12 de jun. de 2026, 10_40_46);
+
+
+/* ic:round-email */
+
+position: absolute;
+width: 15px;
+height: 12px;
+left: 36px;
+top: 369px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #34302C;
+
+
+/* mdi:password */
+
+position: absolute;
+width: 9px;
+height: 12px;
+left: 36px;
+top: 445px;
+
+background: #272421;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #34302C;
+
+
+/* Frame 1987594694 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 692px;
+
+background: #EEB74F;
+border-radius: 10px;
+
+
+/* Entrar */
+
+width: 45px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* choose-date */
+
+position: relative;
+width: 412px;
+height: 1697px;
+
+background: #110F0E;
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* Group 12 */
+
+position: absolute;
+width: 372px;
+height: 30px;
+left: calc(50% - 372px/2);
+top: 172px;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 372px;
+height: 11px;
+left: 20px;
+top: 172px;
+
+background: #1E1E1E;
+border-radius: 15px;
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 151px;
+height: 11px;
+left: 20px;
+top: 172px;
+
+background: #EEB74F;
+border-radius: 15px;
+
+
+/* Passo 2 de 5 - Barbeiro */
+
+position: absolute;
+width: 168.6px;
+height: 15px;
+left: 20px;
+top: 187px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* Escolha o barbeiro */
+
+position: absolute;
+width: 196px;
+height: 16px;
+left: 20px;
+top: 232px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Escolha a data */
+
+position: absolute;
+width: 152px;
+height: 16px;
+left: 20px;
+top: 778px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Com quem você prefere fazer o serviço */
+
+position: absolute;
+width: 202px;
+height: 8px;
+left: 20px;
+top: 260px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Selecione um dia que seu barbeiro tem disponível */
+
+position: absolute;
+width: 256px;
+height: 8px;
+left: 20px;
+top: 806px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Escolha o horário */
+
+position: absolute;
+width: 182px;
+height: 16px;
+left: 20px;
+top: 1197px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Selecione um horário disponível */
+
+position: absolute;
+width: 164px;
+height: 8px;
+left: 20px;
+top: 1225px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594688 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 104px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 30%;
+top: 34.09%;
+bottom: 35.94%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* Calendar */
+
+/* Layout automático */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 281px;
+height: 281px;
+left: calc(50% - 281px/2 + 0.5px);
+top: 862px;
+
+
+
+/* Grid */
+
+/* Layout automático */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 281px;
+height: 281px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Month namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 19px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* seg */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 20px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 16px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 18px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 19px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Week dey */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 23px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 16px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 6px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 13px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 7px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 12px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 13px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 16px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 14px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFA44A;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 281px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Atoms / Week namber */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+background: #333333;
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 15px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B3B3B3;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 6px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #616161;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 8px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B01212;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Atoms / Dey number */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Auto layout por dentro */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 7px;
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #B01212;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 16 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 - 88px);
+top: 1281px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1281px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1281px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 10:00 */
+
+position: absolute;
+width: 28px;
+height: 8px;
+left: calc(50% - 28px/2 - 88px);
+top: calc(50% - 8px/2 + 453.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 - 88px);
+top: 1343px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1343px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1343px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 11:00 */
+
+position: absolute;
+width: 25px;
+height: 8px;
+left: calc(50% - 25px/2 - 87.5px);
+top: calc(50% - 8px/2 + 515.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 22 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 - 88px);
+top: 1405px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1405px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1405px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 15:30 */
+
+position: absolute;
+width: 26px;
+height: 8px;
+left: 105px;
+top: 1422px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 25 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 - 88px);
+top: 1467px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1467px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 84px;
+top: 1467px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 17:00 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: calc(50% - 27px/2 - 87.5px);
+top: calc(50% - 8px/2 + 639.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 17 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2);
+top: 1281px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1281px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1281px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 10:30 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: calc(50% - 27px/2 + 0.5px);
+top: calc(50% - 8px/2 + 453.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group 20 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2);
+top: 1343px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1343px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1343px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 14:30 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: calc(50% - 27px/2 + 0.5px);
+top: calc(50% - 8px/2 + 515.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 23 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2);
+top: 1405px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1405px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1405px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 16:00 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: calc(50% - 27px/2 + 0.5px);
+top: calc(50% - 8px/2 + 577.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group 26 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2);
+top: 1467px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1467px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 172px;
+top: 1467px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 17:30 */
+
+position: absolute;
+width: 26px;
+height: 8px;
+left: calc(50% - 26px/2);
+top: calc(50% - 8px/2 + 639.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 18 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 + 88px);
+top: 1281px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1281px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1281px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 11:00 */
+
+position: absolute;
+width: 25px;
+height: 8px;
+left: calc(50% - 25px/2 + 88.5px);
+top: calc(50% - 8px/2 + 453.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group 28 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1343px;
+
+
+
+/* 9h */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 15:00 */
+
+position: absolute;
+left: 30.88%;
+right: 29.41%;
+top: 40.48%;
+bottom: 40.48%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 24 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 + 88px);
+top: 1405px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1405px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1405px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 16:30 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: calc(50% - 27px/2 + 88.5px);
+top: calc(50% - 8px/2 + 577.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 27 */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: calc(50% - 68px/2 + 88px);
+top: 1467px;
+
+
+
+/* 9h */
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1467px;
+
+
+
+/* 9h */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 68px;
+height: 42px;
+left: 260px;
+top: 1467px;
+
+background: #1F1C1A;
+border: 1px solid rgba(126, 133, 115, 0.4);
+border-radius: 15px;
+
+
+/* 18:00 */
+
+position: absolute;
+width: 28px;
+height: 8px;
+left: calc(50% - 28px/2 + 88px);
+top: calc(50% - 8px/2 + 639.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Frame 1987594689 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 1605px;
+
+background: #EEB74F;
+border-radius: 10px;
+
+
+/* Vector */
+
+width: 12px;
+height: 12.5px;
+
+background: #443312;
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Agendar Horário */
+
+width: 120px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1987594691 */
+
+position: absolute;
+width: 372px;
+height: 438px;
+left: 20px;
+top: 292px;
+overflow-x: scroll;
+
+
+
+/* Group 1000001383 */
+
+position: absolute;
+width: 267px;
+height: 438px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 20 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #191715;
+border: 2px solid #272421;
+border-radius: 10px;
+
+
+/* Especialista em Fade */
+
+position: absolute;
+left: 6.74%;
+right: 53.18%;
+top: 90.87%;
+bottom: 7.31%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 92%;
+/* ou 11px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.79);
+
+
+
+/* Jefh Santos */
+
+position: absolute;
+left: 6.74%;
+right: 47.94%;
+top: 84.47%;
+bottom: 11.87%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 92%;
+/* ou 22px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* jefh */
+
+position: absolute;
+left: 0.75%;
+right: 0.75%;
+top: 0.46%;
+bottom: 19.18%;
+
+background: url(tem_que_ser_dessa_forma_202605021720.jpg);
+border-radius: 8px;
+
+
+/* Group 1000001384 */
+
+position: absolute;
+width: 267px;
+height: 438px;
+left: 287px;
+top: 0px;
+
+
+
+/* Rectangle 21 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #191715;
+border: 2px solid #272421;
+border-radius: 10px;
+
+
+/* Especialista em degradê */
+
+position: absolute;
+left: 6.74%;
+right: 46.82%;
+top: 90.87%;
+bottom: 7.31%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 92%;
+/* ou 11px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.79);
+
+
+
+/* Daniel Alves */
+
+position: absolute;
+left: 6.74%;
+right: 44.19%;
+top: 84.47%;
+bottom: 11.87%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 92%;
+/* ou 22px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* jefh */
+
+position: absolute;
+left: 0.75%;
+right: 0.75%;
+top: 0.46%;
+bottom: 19.18%;
+
+background: url(faça_outro_personagem_masculino_2K_202605021744.jpg);
+border-radius: 8px;
+
+
+/* Group 1000001385 */
+
+position: absolute;
+width: 267px;
+height: 438px;
+left: 574px;
+top: 0px;
+
+
+
+/* Rectangle 21 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #191715;
+border: 2px solid #272421;
+border-radius: 10px;
+
+
+/* Especialista em barba */
+
+position: absolute;
+left: 6.74%;
+right: 51.69%;
+top: 90.87%;
+bottom: 7.31%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 92%;
+/* ou 11px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.79);
+
+
+
+/* Maurício Garcia */
+
+position: absolute;
+left: 6.74%;
+right: 31.09%;
+top: 84.47%;
+bottom: 11.87%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 92%;
+/* ou 22px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* jefh */
+
+position: absolute;
+left: 0.75%;
+right: 0.75%;
+top: 0.46%;
+bottom: 19.18%;
+
+background: url(faça_outro_personagem_masculino_2K_202605021751);
+border-radius: 8px;
+
+
+/* Group 1000001386 */
+
+position: absolute;
+width: 267px;
+height: 438px;
+left: 861px;
+top: 0px;
+
+
+
+/* Rectangle 21 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #191715;
+border: 2px solid #272421;
+border-radius: 10px;
+
+
+/* Especialista em degradê */
+
+position: absolute;
+left: 6.74%;
+right: 46.82%;
+top: 90.87%;
+bottom: 7.31%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 92%;
+/* ou 11px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.79);
+
+
+
+/* Maicon Coletti */
+
+position: absolute;
+left: 6.74%;
+right: 34.83%;
+top: 84.47%;
+bottom: 11.87%;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 92%;
+/* ou 22px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* jefh */
+
+position: absolute;
+left: 0.75%;
+right: 0.75%;
+top: 0.46%;
+bottom: 19.18%;
+
+background: url(faça_outro_personagem_mas_mantem_202605021743);
+border-radius: 8px;
+
+
+/* dahsboard */
+
+position: relative;
+width: 412px;
+height: 1976px;
+
+background: #12100E;
+
+
+/* Frame 1987594689 */
+
+position: absolute;
+width: 372px;
+height: 402px;
+left: 20px;
+top: 1017px;
+overflow-x: scroll;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 261px;
+top: 12px;
+
+background: #191715;
+box-shadow: 0px 0px 200.5px -23px rgba(238, 183, 79, 0.34);
+border-radius: 10px;
+
+
+/* Plano Premium */
+
+position: absolute;
+width: 136px;
+height: 14px;
+left: calc(50% - 136px/2 + 0.5px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 79,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes ilimitados 1 barba inclusa por mês Prioridade máxima nos horários 15% de desconto em produtos Brinde no aniversário */
+
+position: absolute;
+width: 135px;
+height: 71px;
+left: calc(50% - 135px/2 - 20px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Frame 1987594684 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+position: absolute;
+width: 94px;
+height: 23px;
+left: calc(50% - 94px/2 + 196px);
+top: 0px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* MAIS POPULAR */
+
+width: 70px;
+height: 7px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 0px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 113px;
+height: 14px;
+left: calc(50% - 113px/2);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 39,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* 2 cortes por mês Agendamento Prioritário 10% de desconto em produtos Cancelamento a qualquer momento */
+
+position: absolute;
+width: 154px;
+height: 55px;
+left: calc(50% - 154px/2 - 10.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 522px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Black */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 + 1px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 129,90/mês */
+
+position: absolute;
+width: 122px;
+height: 16px;
+left: calc(50% - 122px/2 + 3.5px);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes e barba ilimitados Atendimento VIP Horário exclusivo fora do expediente 20% de desconto em produtos Toalha Quente + hidratação inclusas Convidado com 50% 1x por mês */
+
+position: absolute;
+width: 158px;
+height: 87px;
+left: calc(50% - 158px/2 - 8.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Olá Daniel */
+
+position: absolute;
+width: 109px;
+height: 16px;
+left: 20px;
+top: 112px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Seu último agendamento */
+
+position: absolute;
+width: 268px;
+height: 16px;
+left: 20px;
+top: 196px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Unidades */
+
+position: absolute;
+width: 100px;
+height: 16px;
+left: 20px;
+top: 501px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Assinaturas */
+
+position: absolute;
+width: 123px;
+height: 16px;
+left: 20px;
+top: 969px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Quinta, 7 mai 2026 */
+
+position: absolute;
+width: 95px;
+height: 8px;
+left: 20px;
+top: 140px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Você ainda não fez nenhum agendamento! */
+
+position: absolute;
+width: 221px;
+height: 8px;
+left: 20px;
+top: 236px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 334px;
+height: 161px;
+left: calc(50% - 334px/2);
+top: 292px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(153, 153, 153, 0) 100%),
+linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 10px;
+
+
+/* ChatGPT Image 12 de jun. de 2026, 10_40_46 2 */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 145px;
+top: 339px;
+
+background: url(ChatGPT Image 12 de jun. de 2026, 10_40_46);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 743px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pedra Branca */
+
+position: absolute;
+width: 155px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Paulo Roberto Vidal, 123 - Pedra Branca */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 646px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 183px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1645px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1660px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1677px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1694px;
+
+background: url(.png);
+
+
+/* NavHub */
+
+position: absolute;
+width: 90px;
+height: 17px;
+left: 20px;
+top: 1515px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* NavHub Barbearia · Estilo, precisão e tradição em um único lugar. */
+
+position: absolute;
+width: 332px;
+height: 19px;
+left: 20px;
+top: 1544px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Visite-nos */
+
+position: absolute;
+width: 104px;
+height: 17px;
+left: 20px;
+top: 1614px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 11 */
+
+position: absolute;
+width: 247px;
+height: 67px;
+left: 41px;
+top: 1645px;
+
+
+
+/* Rua Valdemar Viera, 123, - Jardim Eldorado */
+
+position: absolute;
+width: 217px;
+height: 19px;
+left: 41px;
+top: 1645px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Av. Hilza Terezinha Pagani, 289 - Pagani. */
+
+position: absolute;
+width: 204px;
+height: 19px;
+left: 41px;
+top: 1661px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Rua José Cosme Pamplona, 1447 – Bela Vista. */
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 41px;
+top: 1677px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Avenida Paulo Roberto Vidal, 123 - Pedra Branca. */
+
+position: absolute;
+width: 247px;
+height: 19px;
+left: 41px;
+top: 1693px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Email */
+
+position: absolute;
+width: 12px;
+height: 9px;
+left: 20px;
+top: 1728px;
+
+background: url(.png);
+
+
+/* contato@navhub.com */
+
+position: absolute;
+width: 114px;
+height: 8px;
+left: 38px;
+top: 1728px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Horário de Atendimento */
+
+position: absolute;
+width: 252px;
+height: 32px;
+left: 20px;
+top: 1781px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+
+
+/* Segunda a sexta - 09h-20h */
+
+position: absolute;
+width: 137px;
+height: 8px;
+left: 20px;
+top: 1825px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Sábado - 09h-18h */
+
+position: absolute;
+width: 89px;
+height: 8px;
+left: 20px;
+top: 1841px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 372px;
+height: 0px;
+left: 20px;
+top: 1897px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Group 12 */
+
+position: absolute;
+width: 267px;
+height: 31px;
+left: 72px;
+top: 1921px;
+
+
+
+/* Feito com precisão de navalha. */
+
+position: absolute;
+width: 176px;
+height: 15px;
+left: 118px;
+top: 1937px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* © 2026 NavHub. Todos os direitos reservados. */
+
+position: absolute;
+width: 267px;
+height: 15px;
+left: 72px;
+top: 1921px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 840px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Bela Vista */
+
+position: absolute;
+width: 127px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua José Cosme Pamplona, 1447 - Bela Vista */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 549px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pagani */
+
+position: absolute;
+width: 99px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Hilza Terezina pagani, 289 - Pagani */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* dashboard-post */
+
+position: relative;
+width: 412px;
+height: 2137px;
+
+background: #12100E;
+
+
+/* Frame 1987594689 */
+
+position: absolute;
+width: 372px;
+height: 402px;
+left: 20px;
+top: 1178px;
+overflow-x: scroll;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 261px;
+top: 12px;
+
+background: #191715;
+box-shadow: 0px 0px 200.5px -23px rgba(238, 183, 79, 0.34);
+border-radius: 10px;
+
+
+/* Plano Premium */
+
+position: absolute;
+width: 136px;
+height: 14px;
+left: calc(50% - 136px/2 + 0.5px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 79,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes ilimitados 1 barba inclusa por mês Prioridade máxima nos horários 15% de desconto em produtos Brinde no aniversário */
+
+position: absolute;
+width: 135px;
+height: 71px;
+left: calc(50% - 135px/2 - 20px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Frame 1987594684 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+position: absolute;
+width: 94px;
+height: 23px;
+left: calc(50% - 94px/2 + 196px);
+top: 0px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* MAIS POPULAR */
+
+width: 70px;
+height: 7px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 0px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 113px;
+height: 14px;
+left: calc(50% - 113px/2);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 39,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* 2 cortes por mês Agendamento Prioritário 10% de desconto em produtos Cancelamento a qualquer momento */
+
+position: absolute;
+width: 154px;
+height: 55px;
+left: calc(50% - 154px/2 - 10.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 522px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Black */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 + 1px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 129,90/mês */
+
+position: absolute;
+width: 122px;
+height: 16px;
+left: calc(50% - 122px/2 + 3.5px);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes e barba ilimitados Atendimento VIP Horário exclusivo fora do expediente 20% de desconto em produtos Toalha Quente + hidratação inclusas Convidado com 50% 1x por mês */
+
+position: absolute;
+width: 158px;
+height: 87px;
+left: calc(50% - 158px/2 - 8.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Olá Daniel */
+
+position: absolute;
+width: 109px;
+height: 16px;
+left: 20px;
+top: 112px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Seu último agendamento */
+
+position: absolute;
+width: 268px;
+height: 16px;
+left: 20px;
+top: 196px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Unidades */
+
+position: absolute;
+width: 100px;
+height: 16px;
+left: 20px;
+top: 662px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Assinaturas */
+
+position: absolute;
+width: 123px;
+height: 16px;
+left: 20px;
+top: 1130px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Quinta, 7 mai 2026 */
+
+position: absolute;
+width: 95px;
+height: 8px;
+left: 20px;
+top: 140px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 334px;
+height: 161px;
+left: calc(50% - 334px/2);
+top: 453px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(153, 153, 153, 0) 100%),
+linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 10px;
+
+
+/* ChatGPT Image 12 de jun. de 2026, 10_40_46 2 */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 145px;
+top: 500px;
+
+background: url(ChatGPT Image 12 de jun. de 2026, 10_40_46);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 904px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pedra Branca */
+
+position: absolute;
+width: 155px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Paulo Roberto Vidal, 123 - Pedra Branca */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 807px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 183px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1806px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1821px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1838px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1855px;
+
+background: url(.png);
+
+
+/* NavHub */
+
+position: absolute;
+width: 90px;
+height: 17px;
+left: 20px;
+top: 1676px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* NavHub Barbearia · Estilo, precisão e tradição em um único lugar. */
+
+position: absolute;
+width: 332px;
+height: 19px;
+left: 20px;
+top: 1705px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Visite-nos */
+
+position: absolute;
+width: 104px;
+height: 17px;
+left: 20px;
+top: 1775px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 11 */
+
+position: absolute;
+width: 247px;
+height: 67px;
+left: 41px;
+top: 1806px;
+
+
+
+/* Rua Valdemar Viera, 123, - Jardim Eldorado */
+
+position: absolute;
+width: 217px;
+height: 19px;
+left: 41px;
+top: 1806px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Av. Hilza Terezinha Pagani, 289 - Pagani. */
+
+position: absolute;
+width: 204px;
+height: 19px;
+left: 41px;
+top: 1822px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Rua José Cosme Pamplona, 1447 – Bela Vista. */
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 41px;
+top: 1838px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Avenida Paulo Roberto Vidal, 123 - Pedra Branca. */
+
+position: absolute;
+width: 247px;
+height: 19px;
+left: 41px;
+top: 1854px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Email */
+
+position: absolute;
+width: 12px;
+height: 9px;
+left: 20px;
+top: 1889px;
+
+background: url(.png);
+
+
+/* contato@navhub.com */
+
+position: absolute;
+width: 114px;
+height: 8px;
+left: 38px;
+top: 1889px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Horário de Atendimento */
+
+position: absolute;
+width: 252px;
+height: 32px;
+left: 20px;
+top: 1942px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+
+
+/* Segunda a sexta - 09h-20h */
+
+position: absolute;
+width: 137px;
+height: 8px;
+left: 20px;
+top: 1986px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Sábado - 09h-18h */
+
+position: absolute;
+width: 89px;
+height: 8px;
+left: 20px;
+top: 2002px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 372px;
+height: 0px;
+left: 20px;
+top: 2058px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Group 12 */
+
+position: absolute;
+width: 267px;
+height: 31px;
+left: 72px;
+top: 2082px;
+
+
+
+/* Feito com precisão de navalha. */
+
+position: absolute;
+width: 176px;
+height: 15px;
+left: 118px;
+top: 2098px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* © 2026 NavHub. Todos os direitos reservados. */
+
+position: absolute;
+width: 267px;
+height: 15px;
+left: 72px;
+top: 2082px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 1001px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Bela Vista */
+
+position: absolute;
+width: 127px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua José Cosme Pamplona, 1447 - Bela Vista */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 710px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pagani */
+
+position: absolute;
+width: 99px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Hilza Terezina pagani, 289 - Pagani */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Group 1000001397 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: 20px;
+top: 236px;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: calc(50% - 372px/2);
+top: 236px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 146px;
+height: 11px;
+left: 109px;
+top: 28px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 109px;
+top: 47px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Corte Clássico | R$ 50 */
+
+position: absolute;
+width: 132px;
+height: 10px;
+left: 109px;
+top: 70px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #D0CFCF;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 340px;
+height: 44px;
+left: 16px;
+top: 109px;
+
+background: rgba(255, 100, 100, 0.04);
+border-radius: 6px;
+
+
+/* tabler:calendar-cancel */
+
+width: 12px;
+height: 12px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 8.33%;
+top: 12.5%;
+bottom: 8.33%;
+
+border: 1px solid #FF6464;
+
+
+/* Cancelar Agedamento */
+
+width: 160px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FF6464;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 1000001396 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 252px;
+
+
+
+/* Rectangle 5313 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 252px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* JUN */
+
+position: absolute;
+width: 21px;
+height: 8px;
+left: 64px;
+top: 263px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* SÁB | 15:00 */
+
+position: absolute;
+width: 58px;
+height: 8px;
+left: 46px;
+top: 309px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* 2 */
+
+position: absolute;
+width: 16px;
+height: 22px;
+left: 66px;
+top: 279px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 51px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* confirmation-poage */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #110F0E;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 30px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 30px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 334px;
+height: 169px;
+left: calc(50% - 334px/2);
+top: 176px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 10px;
+
+
+/* Agendamento Confirmado! */
+
+position: absolute;
+width: 288px;
+height: 16px;
+left: 62px;
+top: 254px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #443312;
+
+
+
+/* Enviamos os detalhes para o seu e-mail. Mal podemos esperar para te atender! */
+
+position: absolute;
+width: 203px;
+height: 27px;
+left: calc(50% - 203px/2 + 0.5px);
+top: 286px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #443312;
+
+
+
+/* line-md:confirm-circle-filled */
+
+position: absolute;
+width: 42px;
+height: 42px;
+left: calc(50% - 42px/2);
+top: 200px;
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+background: #FFFFFF;
+border: 3px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 41.67%;
+bottom: 37.5%;
+
+border: 3px solid #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #443312;
+
+
+/* Group 1000001382 */
+
+position: absolute;
+width: 372px;
+height: 305px;
+left: 20px;
+top: 378px;
+
+
+
+/* Rectangle 5125 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 372px;
+height: 305px;
+left: calc(50% - 372px/2);
+top: 378px;
+
+background: #191715;
+border: 2px solid #272421;
+border-radius: 10px;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 324px;
+height: 0px;
+left: 44px;
+top: 450px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Line 2 */
+
+position: absolute;
+width: 324px;
+height: 0px;
+left: 44px;
+top: 506px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Line 3 */
+
+position: absolute;
+width: 324px;
+height: 0px;
+left: 44px;
+top: 558px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Line 4 */
+
+position: absolute;
+width: 324px;
+height: 0px;
+left: 44px;
+top: 611px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Group 1000001375 */
+
+position: absolute;
+width: 108px;
+height: 20px;
+left: 80px;
+top: 412px;
+
+
+
+/* Unidade */
+
+position: absolute;
+width: 36px;
+height: 7px;
+left: 80px;
+top: 412px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Nav Jardim eldorado */
+
+position: absolute;
+width: 108px;
+height: 8px;
+left: 80px;
+top: 424px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* fa7-solid:shop */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 44px;
+top: 410px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.5%;
+right: 7.5%;
+top: 15%;
+bottom: 15%;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Group 1000001376 */
+
+position: absolute;
+width: 74px;
+height: 20px;
+left: 80px;
+top: 468px;
+
+
+
+/* Serviço */
+
+position: absolute;
+width: 32px;
+height: 7px;
+left: 80px;
+top: 468px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Corte Clássico */
+
+position: absolute;
+width: 74px;
+height: 8px;
+left: 80px;
+top: 480px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* mingcute:scissors-fill */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 44px;
+top: 466px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 10.41%;
+right: 10.41%;
+top: 4.9%;
+bottom: 0.77%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 50.32%;
+right: 46.2%;
+top: 96.43%;
+bottom: 0.78%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.41%;
+right: 10.41%;
+top: 4.9%;
+bottom: 6.26%;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Group 1000001379 */
+
+position: absolute;
+width: 32px;
+height: 20px;
+left: 80px;
+top: 629px;
+
+
+
+/* Horário */
+
+position: absolute;
+width: 32px;
+height: 7px;
+left: 80px;
+top: 629px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* 15:30 */
+
+position: absolute;
+width: 26px;
+height: 8px;
+left: 80px;
+top: 641px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* tabler:clock-hour-2-filled */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 44px;
+top: 627px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Group 1000001377 */
+
+position: absolute;
+width: 60px;
+height: 20px;
+left: 80px;
+top: 522px;
+
+
+
+/* Barbeiro */
+
+position: absolute;
+width: 37px;
+height: 7px;
+left: 80px;
+top: 522px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Jefh Santos */
+
+position: absolute;
+width: 60px;
+height: 8px;
+left: 80px;
+top: 534px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 46px;
+top: 522px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Group 1000001378 */
+
+position: absolute;
+width: 159px;
+height: 20px;
+left: 80px;
+top: 575px;
+
+
+
+/* Data */
+
+position: absolute;
+width: 21px;
+height: 7px;
+left: 80px;
+top: 575px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Sexta Feira, 8 de Maio de 2026 */
+
+position: absolute;
+width: 159px;
+height: 8px;
+left: 80px;
+top: 587px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 20px;
+height: 21px;
+left: 46px;
+top: 574px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 765px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Ver Meus Agendamentos */
+
+width: 183px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 20px;
+height: 16px;
+
+background: #443312;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1987594684 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 825px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* ic:round-home */
+
+width: 24px;
+height: 24px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.68%;
+right: 11.66%;
+top: 13.94%;
+bottom: 16.67%;
+
+background: #FFFFFF;
+
+
+/* Voltar Para o Início */
+
+width: 137px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* choose-service */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #12100E;
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 141px;
+height: 11px;
+left: 40px;
+top: 228px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.6);
+
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 180px);
+top: calc(50% - 14px/2 - 225.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+
+
+/* Group 12 */
+
+position: absolute;
+width: 372px;
+height: 30px;
+left: calc(50% - 372px/2);
+top: 172px;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 372px;
+height: 11px;
+left: 20px;
+top: 172px;
+
+background: #1E1E1E;
+border-radius: 15px;
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 81.58px;
+height: 11px;
+left: 20px;
+top: 172px;
+
+background: #EEB74F;
+border-radius: 15px;
+
+
+/* Passo 1 de 5 - Serviço */
+
+position: absolute;
+width: 168.6px;
+height: 15px;
+left: 20px;
+top: 187px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* Frame 1987594688 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 104px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 30%;
+top: 34.09%;
+bottom: 35.94%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* Escolha o serviço */
+
+position: absolute;
+width: 181px;
+height: 16px;
+left: 20px;
+top: 287px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Qual é a experiência que você procura? */
+
+position: absolute;
+width: 202px;
+height: 8px;
+left: 20px;
+top: 315px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 637px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Corte Premium */
+
+position: absolute;
+width: 133px;
+height: 14px;
+left: 80px;
+top: 35px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* mingcute:scissors-fill */
+
+position: absolute;
+left: 7.53%;
+right: 86.02%;
+top: 37.04%;
+bottom: 33.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 49.68%;
+right: 48.17%;
+top: 77.44%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 24.22%;
+
+background: #000000;
+
+
+/* R$100 */
+
+position: absolute;
+width: 31px;
+height: 8px;
+left: 317px;
+top: 26px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #EEB74F;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 45px;
+height: 8px;
+left: 303px;
+top: 46px;
+
+
+
+/* 70 min */
+
+position: absolute;
+width: 35px;
+height: 8px;
+left: 313px;
+top: 46px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group */
+
+position: absolute;
+height: 8px;
+left: 81.45%;
+right: 16.4%;
+top: calc(50% - 8px/2 + 9.5px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 81.45%;
+right: 16.4%;
+top: 56.79%;
+bottom: 33.33%;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 540px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Corte + Barba */
+
+position: absolute;
+width: 122px;
+height: 14px;
+left: 80px;
+top: 35px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* mingcute:scissors-fill */
+
+position: absolute;
+left: 7.53%;
+right: 86.02%;
+top: 37.04%;
+bottom: 33.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 49.68%;
+right: 48.17%;
+top: 77.44%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 24.22%;
+
+background: #000000;
+
+
+/* R$80 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: 321px;
+top: 26px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #EEB74F;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 46px;
+height: 8px;
+left: 302px;
+top: 46px;
+
+
+
+/* 60 min */
+
+position: absolute;
+width: 36px;
+height: 8px;
+left: 312px;
+top: 46px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group */
+
+position: absolute;
+height: 8px;
+left: 81.18%;
+right: 16.67%;
+top: calc(50% - 8px/2 + 9.5px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 81.18%;
+right: 16.67%;
+top: 56.79%;
+bottom: 33.33%;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 443px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Corte Degradê */
+
+position: absolute;
+width: 129px;
+height: 14px;
+left: 80px;
+top: 35px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* mingcute:scissors-fill */
+
+position: absolute;
+left: 7.53%;
+right: 86.02%;
+top: 37.04%;
+bottom: 33.33%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 49.68%;
+right: 48.17%;
+top: 77.44%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 24.22%;
+
+background: #000000;
+
+
+/* R$60 */
+
+position: absolute;
+width: 27px;
+height: 8px;
+left: 321px;
+top: 26px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #EEB74F;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 46px;
+height: 8px;
+left: 302px;
+top: 46px;
+
+
+
+/* 40 min */
+
+position: absolute;
+width: 36px;
+height: 8px;
+left: 312px;
+top: 46px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group */
+
+position: absolute;
+height: 8px;
+left: 81.18%;
+right: 16.67%;
+top: calc(50% - 8px/2 + 9.5px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 81.18%;
+right: 16.67%;
+top: 56.79%;
+bottom: 33.33%;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 346px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Corte Clássico */
+
+position: absolute;
+width: 125px;
+height: 14px;
+left: 80px;
+top: 35px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: -50%;
+right: -50%;
+top: -35.71%;
+bottom: -35.71%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* mingcute:scissors-fill */
+
+position: absolute;
+left: -50%;
+right: -50%;
+top: -35.71%;
+bottom: -35.71%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 49.68%;
+right: 48.17%;
+top: 77.44%;
+bottom: 20.83%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 26.03%;
+top: 20.83%;
+bottom: 24.22%;
+
+background: #000000;
+
+
+/* R$50 */
+
+position: absolute;
+width: 26px;
+height: 8px;
+left: 322px;
+top: 26px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #EEB74F;
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 45px;
+height: 8px;
+left: 303px;
+top: 46px;
+
+
+
+/* 30 min */
+
+position: absolute;
+width: 35px;
+height: 8px;
+left: 313px;
+top: 46px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: rgba(255, 255, 255, 0.5);
+
+
+
+/* Group */
+
+position: absolute;
+height: 8px;
+left: 81.45%;
+right: 16.4%;
+top: calc(50% - 8px/2 + 9.5px);
+
+
+
+/* Vector */
+
+position: absolute;
+left: 81.45%;
+right: 16.4%;
+top: 56.79%;
+bottom: 33.33%;
+
+background: rgba(255, 255, 255, 0.5);
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: 20px;
+top: 825px;
+
+background: #EEB74F;
+border-radius: 10px;
+
+
+/* Próximo Passo */
+
+width: 104px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 20px;
+height: 16px;
+
+background: #443312;
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* plan-page */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #12100E;
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 - 130.5px);
+top: calc(50% - 14px/2 - 93.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 - 94.5px);
+top: calc(50% - 14px/2 + 70.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1987594688 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 104px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 30%;
+top: 34.09%;
+bottom: 35.94%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* R$ 39,90/mês */
+
+position: absolute;
+width: 186px;
+height: 27px;
+left: calc(50% - 186px/2 - 93px);
+top: 396px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 64px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 1000001265 */
+
+position: absolute;
+width: 372px;
+height: 224px;
+left: 20px;
+top: 471px;
+
+
+
+/* Rectangle 5312 */
+
+position: absolute;
+width: 372px;
+height: 224px;
+left: 20px;
+top: 471px;
+
+background: #191715;
+/* SHADOW CARD TEST */
+box-shadow: 0px 1px 10.3px rgba(18, 22, 25, 0.09);
+border-radius: 24px;
+
+
+/* Group 1000001391 */
+
+position: absolute;
+width: 139px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Group 1000001242 */
+
+position: absolute;
+width: 109px;
+height: 9px;
+left: 74px;
+top: 544px;
+
+
+
+/* 2 cortes por mês */
+
+position: absolute;
+width: 109px;
+height: 9px;
+left: 74px;
+top: 544px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001387 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001393 */
+
+position: absolute;
+width: 227px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* 10% de desconto em produtos */
+
+position: absolute;
+width: 197px;
+height: 9px;
+left: 74px;
+top: 604px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001389 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001392 */
+
+position: absolute;
+width: 187px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Agendamento prioritário */
+
+position: absolute;
+width: 157px;
+height: 9px;
+left: 74px;
+top: 574px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001388 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001394 */
+
+position: absolute;
+width: 259px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Cancelamento a qualquer momento */
+
+position: absolute;
+width: 229px;
+height: 9px;
+left: 74px;
+top: 634px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001390 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Benefícios do plano */
+
+position: absolute;
+width: 174px;
+height: 14px;
+left: calc(50% - 174px/2 - 75px);
+top: calc(50% - 14px/2 + 51.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1987594683 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: calc(50% - 372px/2);
+top: 825px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1987594692 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 372px;
+height: 154px;
+left: calc(50% - 372px/2);
+top: 172px;
+
+background: #12100E;
+border: 2px solid #EEB74F;
+border-radius: 10px;
+
+
+/* Frame 1987594684 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+position: absolute;
+width: 154px;
+height: 23px;
+left: calc(50% - 154px/2 - 93px);
+top: 24px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* ESTILO SEM PREOCUPAÇÕES */
+
+width: 130px;
+height: 7px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cabelo e barba sempre impecáveis */
+
+position: absolute;
+width: 251px;
+height: 11px;
+left: calc(50% - 251px/2 - 44.5px);
+top: calc(50% - 11px/2 - 12.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Assine o Clube VIP e garanta a recorrência dos seus cuidados com condições e benefícios exclusivos na NavHub. */
+
+position: absolute;
+width: 251px;
+height: 40px;
+left: calc(50% - 251px/2 - 44.5px);
+top: calc(50% - 40px/2 + 25px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+/* ou 16px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* material-symbols:trophy-outline-rounded */
+
+position: absolute;
+width: 142px;
+height: 142px;
+left: 246px;
+top: 37px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+background: rgba(255, 255, 255, 0.09);
+
+
+/* Ellipse 4 */
+
+position: absolute;
+width: 201px;
+height: 147px;
+left: -50px;
+top: 150px;
+
+background: #EEB74F;
+filter: blur(142.3px);
+
+
+/* Android Compact - 1 */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #110F0E;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 30px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 30px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Meus Agendamentos */
+
+position: absolute;
+width: 226px;
+height: 16px;
+left: 20px;
+top: 172px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Acompanhe e gerencie seus agendamentos. */
+
+position: absolute;
+width: 229px;
+height: 8px;
+left: calc(50% - 229px/2 - 71.5px);
+top: 204px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #D0CFCF;
+
+
+
+/* Frame 1987594688 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 104px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 30%;
+top: 34.09%;
+bottom: 35.94%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* Group 1000001395 */
+
+position: absolute;
+width: 372px;
+height: 23px;
+left: 20px;
+top: 260px;
+
+
+
+/* Frame 1987594693 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 16px;
+gap: 81px;
+
+position: absolute;
+width: 372px;
+height: 11px;
+left: 20px;
+top: 260px;
+
+
+
+/* Próximos */
+
+margin: 0 auto;
+width: 66px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #EEB74F;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Histórico */
+
+margin: 0 auto;
+width: 64px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cancelados */
+
+margin: 0 auto;
+width: 81px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 372px;
+height: 0px;
+left: 20px;
+top: 283px;
+
+border: 1px solid #221E1C;
+
+
+/* Line 2 */
+
+position: absolute;
+width: 101px;
+height: 0px;
+left: 20px;
+top: 282.5px;
+
+border: 1px solid #EEB74F;
+
+
+/* Próximos Agendamentos */
+
+position: absolute;
+width: 178px;
+height: 11px;
+left: 20px;
+top: 307px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 1000001397 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: 20px;
+top: 342px;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: calc(50% - 372px/2);
+top: 342px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 146px;
+height: 11px;
+left: 109px;
+top: 28px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 109px;
+top: 47px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Corte Clássico | R$ 50 */
+
+position: absolute;
+width: 132px;
+height: 10px;
+left: 109px;
+top: 70px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #D0CFCF;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 340px;
+height: 44px;
+left: 16px;
+top: 109px;
+
+background: rgba(255, 100, 100, 0.04);
+border-radius: 6px;
+
+
+/* tabler:calendar-cancel */
+
+width: 12px;
+height: 12px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 8.33%;
+top: 12.5%;
+bottom: 8.33%;
+
+border: 1px solid #FF6464;
+
+
+/* Cancelar Agedamento */
+
+width: 160px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FF6464;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 1000001396 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 358px;
+
+
+
+/* Rectangle 5313 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 358px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* JUN */
+
+position: absolute;
+width: 21px;
+height: 8px;
+left: 64px;
+top: 369px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* SÁB | 15:00 */
+
+position: absolute;
+width: 58px;
+height: 8px;
+left: 46px;
+top: 415px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* 2 */
+
+position: absolute;
+width: 16px;
+height: 22px;
+left: 66px;
+top: 385px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 51px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
