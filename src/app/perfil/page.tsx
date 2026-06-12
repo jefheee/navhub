@@ -410,7 +410,7 @@ export default function ProfilePage() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-md bg-[#0D0D0D] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
+              className="w-full max-w-md bg-[#12100E] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
             >
               <div className="flex justify-between items-center mb-5 border-b border-nav-border pb-3">
                 <h3 className="text-md font-bold text-nav-text-light font-display flex items-center gap-2">
@@ -505,7 +505,7 @@ export default function ProfilePage() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-md bg-[#0D0D0D] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
+              className="w-full max-w-md bg-[#12100E] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
             >
               <div className="flex justify-between items-center mb-5 border-b border-nav-border pb-3">
                 <h3 className="text-md font-bold text-nav-text-light font-display flex items-center gap-2">
@@ -530,9 +530,9 @@ export default function ProfilePage() {
                     onChange={(e) => setFormFavBarber(e.target.value)}
                     className="w-full bg-[#161616] border border-nav-border focus:border-nav-gold/50 rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors cursor-pointer"
                   >
-                    <option value="" className="bg-[#0D0D0D]">Nenhum preferido</option>
+                    <option value="" className="bg-[#12100E]">Nenhum preferido</option>
                     {mockBarbers.map((b) => (
-                      <option key={b.id} value={b.id} className="bg-[#0D0D0D]">
+                      <option key={b.id} value={b.id} className="bg-[#12100E]">
                         {b.name} ({b.role.split(' / ')[0]})
                       </option>
                     ))}
@@ -602,7 +602,7 @@ export default function ProfilePage() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-md bg-[#0D0D0D] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
+              className="w-full max-w-md bg-[#12100E] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
             >
               <div className="flex justify-between items-center mb-5 border-b border-nav-border pb-3">
                 <h3 className="text-md font-bold text-nav-text-light font-display flex items-center gap-2">
@@ -698,7 +698,7 @@ export default function ProfilePage() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="w-full max-w-md bg-[#0D0D0D] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
+              className="w-full max-w-md bg-[#12100E] border border-nav-border rounded-xl p-6 relative z-10 shadow-2xl"
             >
               <div className="flex justify-between items-center mb-5 border-b border-nav-border pb-3">
                 <h3 className="text-md font-bold text-nav-text-light font-display flex items-center gap-2">

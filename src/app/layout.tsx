@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0D0D0D",
+  themeColor: "#12100E",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -48,9 +48,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${outfit.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="bg-[#050505] text-foreground font-sans min-h-screen flex flex-col overflow-x-hidden">
+      <body className="bg-[#12100E] text-foreground font-sans min-h-screen flex flex-col overflow-x-hidden">
         <SchedulingProvider>
-          <div className="flex-1 flex flex-col w-full max-w-[430px] mx-auto min-h-[100dvh] bg-[#0D0D0D] text-[#F5F5F5] relative shadow-2xl border-x border-[#222] overflow-x-hidden">
+          <div className="flex-1 flex flex-col w-full max-w-[430px] mx-auto min-h-[100dvh] bg-[#12100E] text-[#F5F5F5] relative shadow-2xl border-x border-[#222] overflow-x-hidden">
             <Header />
             <main className="flex-1 flex flex-col w-full relative">
               {children}

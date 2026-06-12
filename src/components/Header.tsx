@@ -14,7 +14,7 @@ export function Header() {
   }
 
   return (
-    <header className="w-full px-6 py-5 flex items-center justify-between bg-[#050505] z-50">
+    <header className="w-full px-6 py-5 flex items-center justify-between bg-[#12100E] z-50">
       {/* Left: Logo NavHub Image */}
       <Link href="/" className="flex items-center cursor-pointer">
         <Image 

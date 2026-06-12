@@ -27,7 +27,7 @@ export default function ServiceSelectionPage() {
   };
 
   return (
-    <div className="flex flex-col w-full bg-[#050505] min-h-screen">
+    <div className="flex flex-col w-full bg-[#12100E] min-h-screen">
       <main className="flex-1 px-6 pt-2 pb-32 flex flex-col w-full max-w-md mx-auto">
         
         {/* Seta de Voltar */}
@@ -48,7 +48,13 @@ export default function ServiceSelectionPage() {
         {/* Localização */}
         <div className="flex items-center gap-3 mb-6">
           <div className="w-8 h-8 flex items-center justify-center">
-            <Image src="/assets/icone-localizacao-pin.png" alt="Localização" width={20} height={20} className="filter drop-shadow-[0_0_2px_#EEB74F]" style={{ filter: 'invert(75%) sepia(35%) saturate(760%) hue-rotate(345deg) brightness(101%) contrast(92%)' }} />
+            <Image 
+              src="/assets/icone-localizacao-pin.png" 
+              alt="Localização" 
+              width={20} 
+              height={20} 
+              style={{ filter: 'brightness(0) saturate(100%) invert(82%) sepia(43%) saturate(1099%) hue-rotate(341deg) brightness(96%) contrast(93%)' }} 
+            />
           </div>
           <span className="text-white text-lg font-semibold font-display">
             Nav Jardim Eldorado

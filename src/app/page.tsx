@@ -28,7 +28,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex flex-col w-full bg-[#050505] min-h-screen">
+    <div className="flex flex-col w-full bg-[#12100E] min-h-screen">
       {/* Hero Background with Gradient */}
       <div className="absolute top-0 left-0 w-full h-[350px] -z-10">
         <Image 
@@ -39,7 +39,7 @@ export default function HomePage() {
           className="opacity-40"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/10 via-[#050505]/80 to-[#050505]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#12100E]/10 via-[#12100E]/80 to-[#12100E]" />
       </div>
 
       <main className="flex-1 px-6 pt-6 pb-12 flex flex-col gap-8 w-full max-w-md mx-auto">
@@ -147,9 +147,9 @@ export default function HomePage() {
         {/* Rodapé (Footer) Limpo */}
         <footer className="mt-8 pt-8 border-t border-[#1A1A1A] flex flex-col gap-8">
           
-          <div className="flex flex-col items-center text-center">
-            <Image src="/assets/icone-logo-navhub-dourado.png" alt="NavHub Logo" width={100} height={30} className="mb-3 opacity-90" />
-            <p className="text-[#A3A3A3] text-sm font-serif italic">
+          <div className="flex flex-col items-start text-left gap-1">
+            <h3 className="text-white font-serif text-[28px] font-semibold tracking-wide">NavHub</h3>
+            <p className="text-[#A3A3A3] text-sm font-sans">
               NavHub Barbearia · Estilo, precisão e tradição em um único lugar.
             </p>
           </div>
@@ -157,32 +157,54 @@ export default function HomePage() {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-serif text-lg font-semibold">Visite-nos</h4>
             <ul className="flex flex-col gap-3">
-              {unidades.map((unit) => (
-                <li key={unit.id} className="flex items-center gap-3">
+              {[
+                'Rua Valdemar Viera, 123, - Jardim Eldorado',
+                'Av. Hilza Terezinha Pagani, 289 - Pagani.',
+                'Rua José Cosme Pamplona, 1447 – Bela Vista.',
+                'Avenida Paulo Roberto Vidal, 123 - Pedra Branca.',
+              ].map((address, i) => (
+                <li key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 flex items-center justify-center">
-                    <Image src="/assets/icone-localizacao-pin.png" alt="Pin" width={16} height={16} className="filter drop-shadow-[0_0_2px_#EEB74F]" style={{ filter: 'invert(75%) sepia(35%) saturate(760%) hue-rotate(345deg) brightness(101%) contrast(92%)' }} />
+                    <Image 
+                      src="/assets/icone-localizacao-pin.png" 
+                      alt="Pin" 
+                      width={16} 
+                      height={16} 
+                      style={{ filter: 'brightness(0) saturate(100%) invert(82%) sepia(43%) saturate(1099%) hue-rotate(341deg) brightness(96%) contrast(93%)' }} 
+                    />
                   </div>
-                  <span className="text-[#D4D4D4] text-sm">{unit.address}</span>
+                  <span className="text-[#D4D4D4] text-sm">{address}</span>
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <h4 className="text-white font-serif text-lg font-semibold">Contato</h4>
-            <div className="flex items-center gap-3">
+            
+            <div className="flex items-center gap-3 mt-1">
               <div className="w-6 h-6 flex items-center justify-center">
-                <Image src="/assets/icone-email.png" alt="Email" width={16} height={16} />
+                <Image 
+                  src="/assets/icone-email.png" 
+                  alt="Email" 
+                  width={16} 
+                  height={16} 
+                  style={{ filter: 'brightness(0) saturate(100%) invert(82%) sepia(43%) saturate(1099%) hue-rotate(341deg) brightness(96%) contrast(93%)' }} 
+                />
               </div>
               <span className="text-[#D4D4D4] text-sm">contato@navhub.com</span>
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 pb-8">
+          <div className="flex flex-col gap-3">
             <h4 className="text-white font-serif text-lg font-semibold">Horário de Atendimento</h4>
             <div className="flex flex-col gap-1.5 text-sm text-[#D4D4D4]">
               <p>Segunda a sexta - 09h-20h</p>
               <p>Sábado - 09h-18h</p>
+            </div>
+          </div>
+
+          <div className="w-full flex flex-col items-center gap-6 mt-4 pb-8">
+            <div className="w-full h-[1px] bg-[#EBC351]/50" />
+            <div className="text-center text-xs text-[#A3A3A3] leading-relaxed">
+              <p>© 2026 NavHub. Todos os direitos reservados.</p>
+              <p>Feito com precisão de navalha.</p>
             </div>
           </div>
 

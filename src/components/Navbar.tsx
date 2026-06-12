@@ -50,7 +50,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#0D0D0D]/90 backdrop-blur-md border-t border-[#1A1A1A] px-6 py-3 flex justify-between items-center z-50 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#12100E]/90 backdrop-blur-md border-t border-[#1A1A1A] px-6 py-3 flex justify-between items-center z-50 pwa-bottom shadow-[0_-5px_15px_rgba(0,0,0,0.5)]">
       {navItems.map((item, idx) => {
         const Icon = item.icon;
         return (

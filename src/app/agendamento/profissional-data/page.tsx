@@ -46,7 +46,7 @@ export default function ProfessionalDataPage() {
   };
 
   return (
-    <div className="flex flex-col w-full bg-[#050505] min-h-screen">
+    <div className="flex flex-col w-full bg-[#12100E] min-h-screen">
       <main className="flex-1 px-6 pt-2 pb-32 flex flex-col w-full max-w-md mx-auto overflow-y-auto">
         
         {/* Seta de Voltar */}

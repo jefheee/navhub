@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #110F0E;
+  --color-background: #12100E;
   --color-foreground: #FFFFFF;
   
-  --color-nav-bg: #110F0E;
+  --color-nav-bg: #12100E;
   --color-nav-surface: #12100E;
   --color-nav-card: #272421;
   --color-nav-gold: #EEB74F;
@@ -19,12 +19,12 @@
 }
 
 :root {
-  --background: #110F0E;
+  --background: #12100E;
   --foreground: #FFFFFF;
 }
 
 body {
-  background-color: #110F0E;
+  background-color: #12100E;
   color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
