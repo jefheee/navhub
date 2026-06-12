@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Outfit, Inter } from "next/font/google";
 import { SchedulingProvider } from "@/context/SchedulingContext";
 import { Header } from "@/components/Header";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -54,11 +52,9 @@ export default function RootLayout({
         <SchedulingProvider>
           <div className="flex-1 flex flex-col w-full max-w-[430px] mx-auto min-h-[100dvh] bg-[#0D0D0D] text-[#F5F5F5] relative shadow-2xl border-x border-[#222] overflow-x-hidden">
             <Header />
-            <main className="flex-1 flex flex-col w-full px-5 py-4 pb-28">
+            <main className="flex-1 flex flex-col w-full relative">
               {children}
             </main>
-            <Footer />
-            <Navbar />
           </div>
         </SchedulingProvider>
         <script

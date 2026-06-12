@@ -3,133 +3,109 @@
 import React, { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useScheduling } from '@/context/SchedulingContext';
-import { ServiceCard } from '@/components/ServiceCard';
-import { Sparkles, CalendarDays, Calendar } from 'lucide-react';
-import gsap from 'gsap';
+import { ArrowLeft, Scissors } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ServiceSelectionPage() {
   const { 
     selectedUnit, 
-    mockServices, 
     selectedService, 
-    setSelectedService,
-    appointments
+    setSelectedService
   } = useScheduling();
   
   const router = useRouter();
-  const containerRef = useRef<HTMLDivElement>(null);
+  
+  const servicosExatos = [
+    { id: '1', name: 'Corte Clássico', price: 50, duration: 30 },
+    { id: '2', name: 'Corte Degradê', price: 60, duration: 40 },
+    { id: '3', name: 'Corte + Barba', price: 80, duration: 60 },
+    { id: '4', name: 'Corte Premium', price: 100, duration: 70 }
+  ];
 
-  const activeAppointments = appointments
-    .filter(appt => appt.status === 'scheduled')
-    .sort((a, b) => {
-      const dateTimeA = new Date(`${a.date}T${a.time}`);
-      const dateTimeB = new Date(`${b.date}T${b.time}`);
-      return dateTimeA.getTime() - dateTimeB.getTime();
-    });
-
-  // Redirect if no unit selected
-  useEffect(() => {
-    if (!selectedUnit) {
-      router.replace('/agendamento/unidade');
-    }
-  }, [selectedUnit, router]);
-
-  useEffect(() => {
-    if (!selectedUnit) return;
-    
-    const ctx = gsap.context(() => {
-      gsap.from('.srv-reveal-card', {
-        opacity: 0,
-        x: -20,
-        stagger: 0.1,
-        duration: 0.5,
-        ease: 'power2.out',
-      });
-    }, containerRef);
-    return () => ctx.revert();
-  }, [selectedUnit]);
-
-  if (!selectedUnit) return null;
+  const handleSelect = (service: any) => {
+    setSelectedService(service);
+  };
 
   return (
-    <div ref={containerRef} className="py-2 flex flex-col gap-6 pb-32">
-      {/* Active Appointments Banner */}
-      {activeAppointments.length > 0 && (
-        <div className="bg-nav-gold/10 border border-nav-gold/30 rounded-xl p-4 flex flex-col gap-3 srv-reveal-card">
-          <div className="flex items-center gap-2 text-nav-gold">
-            <Calendar className="w-4.5 h-4.5" />
-            <span className="text-xs font-bold uppercase tracking-wider font-display">
-              Seus Agendamentos Ativos
-            </span>
-          </div>
-          <div className="space-y-2">
-            {activeAppointments.map((appt) => {
-              const [year, month, day] = appt.date.split('-');
-              const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
-              const formattedDate = dateObj.toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' });
-              return (
-                <div key={appt.id} className="flex flex-col sm:flex-row justify-between sm:items-center text-xs text-nav-text-light border-b border-nav-border/30 pb-2 last:border-0 last:pb-0 gap-1.5">
-                  <div>
-                    <span className="font-semibold text-nav-gold">{appt.service.name}</span> com <span className="font-medium text-white">{appt.barber.name}</span> em <span className="text-nav-text-muted">{appt.unit.name}</span>
-                  </div>
-                  <div className="text-nav-text-muted font-display shrink-0">
-                    <span className="capitalize font-semibold text-white">{formattedDate}</span> às <span className="text-nav-gold font-semibold">{appt.time}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* Unit Selected Badge Info */}
-      <div className="bg-nav-surface border border-nav-border rounded-lg p-3 flex justify-between items-center">
-        <div>
-          <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider block font-display">
-            Unidade Selecionada
-          </span>
-          <span className="text-sm font-semibold text-nav-text-light">{selectedUnit.name}</span>
-        </div>
-        <button
-          onClick={() => router.push('/agendamento/unidade')}
-          className="text-xs text-nav-gold hover:underline font-semibold font-display cursor-pointer"
-        >
-          Alterar
+    <div className="flex flex-col w-full bg-[#050505] min-h-screen">
+      <main className="flex-1 px-6 pt-2 pb-32 flex flex-col w-full max-w-md mx-auto">
+        
+        {/* Seta de Voltar */}
+        <button onClick={() => router.back()} className="mb-6 cursor-pointer">
+          <ArrowLeft className="w-6 h-6 text-white" />
         </button>
-      </div>
 
-      <div className="text-center mb-1">
-        <h3 className="text-xs uppercase tracking-widest text-nav-text-muted font-bold font-display">
-          Escolha os serviços desejados
-        </h3>
-      </div>
-
-      {/* Services List */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {mockServices.map((service) => (
-          <div key={service.id} className="srv-reveal-card">
-            <ServiceCard
-              service={service}
-              isSelected={selectedService?.id === service.id}
-              onSelect={setSelectedService}
-            />
+        {/* Barra de Progresso */}
+        <div className="flex flex-col mb-8">
+          <div className="w-full bg-[#332F30] h-[4px] rounded-full overflow-hidden mb-2">
+            <div className="bg-[#EEB74F] h-full" style={{ width: '20%' }} />
           </div>
-        ))}
-      </div>
+          <span className="text-[#A3A3A3] text-sm font-medium">
+            Passo 1 de 5 - Serviço
+          </span>
+        </div>
 
-      {/* Floating Call to Action Bar constrained to 430px */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-[calc(430px-2.5rem)] z-50 pwa-bottom">
+        {/* Localização */}
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-8 h-8 flex items-center justify-center">
+            <Image src="/assets/icone-localizacao-pin.png" alt="Localização" width={20} height={20} className="filter drop-shadow-[0_0_2px_#EEB74F]" style={{ filter: 'invert(75%) sepia(35%) saturate(760%) hue-rotate(345deg) brightness(101%) contrast(92%)' }} />
+          </div>
+          <span className="text-white text-lg font-semibold font-display">
+            Nav Jardim Eldorado
+          </span>
+        </div>
+
+        {/* Títulos */}
+        <div className="mb-8">
+          <h1 className="text-white text-[28px] font-bold font-display leading-tight">
+            Escolha o serviço
+          </h1>
+          <p className="text-[#A3A3A3] text-[15px] mt-1">
+            Qual é a experiência que você procura?
+          </p>
+        </div>
+
+        {/* Lista de Serviços */}
+        <div className="flex flex-col gap-3">
+          {servicosExatos.map((servico) => {
+            const isSelected = selectedService?.name === servico.name;
+            return (
+              <div 
+                key={servico.id}
+                onClick={() => handleSelect(servico)}
+                className={`flex items-center justify-between p-4 rounded-[12px] border cursor-pointer transition-colors ${
+                  isSelected ? 'bg-[#222] border-[#EEB74F]' : 'bg-[#1A1A1A] border-transparent hover:border-[#333]'
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-[#EEB74F] rounded-[8px] flex items-center justify-center flex-shrink-0">
+                    <Scissors className="w-6 h-6 text-black" />
+                  </div>
+                  <h3 className="text-white font-bold text-[16px] font-display">{servico.name}</h3>
+                </div>
+                <div className="flex flex-col items-end">
+                  <span className="text-white font-bold text-[16px]">R${servico.price}</span>
+                  <span className="text-[#A3A3A3] text-[12px]">{servico.duration} min</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+      </main>
+
+      {/* Floating Call to Action Bar */}
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-md z-50">
         <button
           disabled={!selectedService}
           onClick={() => router.push('/agendamento/profissional-data')}
-          className={`w-full py-4 flex items-center justify-center gap-2 font-bold font-display rounded-2xl shadow-2xl transition-all cursor-pointer ${
+          className={`w-full py-[16px] flex items-center justify-center font-bold text-[16px] rounded-[12px] transition-all cursor-pointer ${
             selectedService
-              ? 'bg-nav-gold text-black hover:bg-yellow-500 hover:shadow-[0_0_20px_rgba(229,176,92,0.4)] active:scale-[0.98]'
-              : 'bg-neutral-800 text-neutral-500 border border-neutral-700 cursor-not-allowed opacity-90'
+              ? 'bg-[#EEB74F] text-black hover:opacity-90 shadow-[0_4px_20px_rgba(238,183,79,0.3)]'
+              : 'bg-[#332F30] text-[#777] cursor-not-allowed'
           }`}
         >
-          <CalendarDays className="w-5 h-5" />
-          <span>Continuar</span>
+          Próximo Passo →
         </button>
       </div>
     </div>

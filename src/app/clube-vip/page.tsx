@@ -127,7 +127,7 @@ function ClubeVipContent() {
             </div>
 
             <div className="flex flex-col gap-3.5">
-              <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">O que está incluso:</span>
+              <span className="text-[20px] text-white font-semibold font-display">Benefícios do plano</span>
               <ul className="space-y-3">
                 <li className="flex gap-2.5 items-start text-xs text-nav-text-light">
                   <Check className="w-4.5 h-4.5 text-nav-gold shrink-0 mt-0.5" />
@@ -165,7 +165,7 @@ function ClubeVipContent() {
             </div>
 
             <div className="flex flex-col gap-3.5">
-              <span className="text-[10px] text-nav-gold font-bold uppercase tracking-wider font-display">O que está incluso:</span>
+              <span className="text-[20px] text-white font-semibold font-display">Benefícios do plano</span>
               <ul className="space-y-3">
                 <li className="flex gap-2.5 items-start text-xs text-nav-text-light">
                   <Check className="w-4.5 h-4.5 text-nav-gold shrink-0 mt-0.5" />
@@ -219,7 +219,7 @@ function ClubeVipContent() {
               <span>Assinatura Ativa!</span>
             </div>
           ) : (
-            <span>Assinar Plano {selectedPlan === 'basico' ? 'Barber' : 'Premium'}</span>
+            <span className="text-[16px] leading-[26px]">Quero o {selectedPlan === 'basico' ? 'Básico' : 'Premium'}</span>
           )}
         </button>
       </div>

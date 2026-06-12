@@ -1,0 +1,764 @@
+/* plan-page */
+
+position: relative;
+width: 412px;
+height: 917px;
+
+background: #12100E;
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 - 130.5px);
+top: calc(50% - 14px/2 - 93.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 - 94.5px);
+top: calc(50% - 14px/2 + 70.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1987594688 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 20px;
+top: 104px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 30%;
+top: 34.09%;
+bottom: 35.94%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* R$ 39,90/mês */
+
+position: absolute;
+width: 186px;
+height: 27px;
+left: calc(50% - 186px/2 - 93px);
+top: 396px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 64px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 1000001265 */
+
+position: absolute;
+width: 372px;
+height: 224px;
+left: 20px;
+top: 471px;
+
+
+
+/* Rectangle 5312 */
+
+position: absolute;
+width: 372px;
+height: 224px;
+left: 20px;
+top: 471px;
+
+background: #191715;
+/* SHADOW CARD TEST */
+box-shadow: 0px 1px 10.3px rgba(18, 22, 25, 0.09);
+border-radius: 24px;
+
+
+/* Group 1000001391 */
+
+position: absolute;
+width: 139px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Group 1000001242 */
+
+position: absolute;
+width: 109px;
+height: 9px;
+left: 74px;
+top: 544px;
+
+
+
+/* 2 cortes por mês */
+
+position: absolute;
+width: 109px;
+height: 9px;
+left: 74px;
+top: 544px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001387 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 539px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001393 */
+
+position: absolute;
+width: 227px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* 10% de desconto em produtos */
+
+position: absolute;
+width: 197px;
+height: 9px;
+left: 74px;
+top: 604px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001389 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 599px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001392 */
+
+position: absolute;
+width: 187px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Agendamento prioritário */
+
+position: absolute;
+width: 157px;
+height: 9px;
+left: 74px;
+top: 574px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001388 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 569px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Group 1000001394 */
+
+position: absolute;
+width: 259px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Cancelamento a qualquer momento */
+
+position: absolute;
+width: 229px;
+height: 9px;
+left: 74px;
+top: 634px;
+
+font-family: 'Noir Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+/* ou 17px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #CACBCA;
+
+
+
+/* Group 1000001390 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 4px;
+
+
+/* pajamas:check-xs */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 44px;
+top: 629px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.91%;
+right: 18.76%;
+top: 25.01%;
+bottom: 25.01%;
+
+background: #000000;
+
+
+/* Benefícios do plano */
+
+position: absolute;
+width: 174px;
+height: 14px;
+left: calc(50% - 174px/2 - 75px);
+top: calc(50% - 14px/2 + 51.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 1987594683 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 372px;
+height: 44px;
+left: calc(50% - 372px/2);
+top: 825px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1987594692 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 372px;
+height: 154px;
+left: calc(50% - 372px/2);
+top: 172px;
+
+background: #12100E;
+border: 2px solid #EEB74F;
+border-radius: 10px;
+
+
+/* Frame 1987594684 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+position: absolute;
+width: 154px;
+height: 23px;
+left: calc(50% - 154px/2 - 93px);
+top: 24px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* ESTILO SEM PREOCUPAÇÕES */
+
+width: 130px;
+height: 7px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Cabelo e barba sempre impecáveis */
+
+position: absolute;
+width: 251px;
+height: 11px;
+left: calc(50% - 251px/2 - 44.5px);
+top: calc(50% - 11px/2 - 12.5px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Assine o Clube VIP e garanta a recorrência dos seus cuidados com condições e benefícios exclusivos na NavHub. */
+
+position: absolute;
+width: 251px;
+height: 40px;
+left: calc(50% - 251px/2 - 44.5px);
+top: calc(50% - 40px/2 + 25px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+/* ou 16px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* material-symbols:trophy-outline-rounded */
+
+position: absolute;
+width: 142px;
+height: 142px;
+left: 246px;
+top: 37px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+background: rgba(255, 255, 255, 0.09);
+
+
+/* Ellipse 4 */
+
+position: absolute;
+width: 201px;
+height: 147px;
+left: -50px;
+top: 150px;
+
+background: #EEB74F;
+filter: blur(142.3px);
+
+

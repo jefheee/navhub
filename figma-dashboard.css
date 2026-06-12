@@ -1,0 +1,2077 @@
+/* dashboard-post */
+
+position: relative;
+width: 412px;
+height: 2137px;
+
+background: #12100E;
+
+
+/* Frame 1987594689 */
+
+position: absolute;
+width: 372px;
+height: 402px;
+left: 20px;
+top: 1178px;
+overflow-x: scroll;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 261px;
+top: 12px;
+
+background: #191715;
+box-shadow: 0px 0px 200.5px -23px rgba(238, 183, 79, 0.34);
+border-radius: 10px;
+
+
+/* Plano Premium */
+
+position: absolute;
+width: 136px;
+height: 14px;
+left: calc(50% - 136px/2 + 0.5px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 79,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes ilimitados 1 barba inclusa por mês Prioridade máxima nos horários 15% de desconto em produtos Brinde no aniversário */
+
+position: absolute;
+width: 135px;
+height: 71px;
+left: calc(50% - 135px/2 - 20px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Frame 1987594684 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+position: absolute;
+width: 94px;
+height: 23px;
+left: calc(50% - 94px/2 + 196px);
+top: 0px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* MAIS POPULAR */
+
+width: 70px;
+height: 7px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 0px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Básico */
+
+position: absolute;
+width: 113px;
+height: 14px;
+left: calc(50% - 113px/2);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 39,90/mês */
+
+position: absolute;
+width: 113px;
+height: 16px;
+left: calc(50% - 113px/2);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* 2 cortes por mês Agendamento Prioritário 10% de desconto em produtos Cancelamento a qualquer momento */
+
+position: absolute;
+width: 154px;
+height: 55px;
+left: calc(50% - 154px/2 - 10.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+box-sizing: border-box;
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+border: 2px solid #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 241px;
+height: 390px;
+left: 522px;
+top: 12px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Plano Black */
+
+position: absolute;
+width: 111px;
+height: 14px;
+left: calc(50% - 111px/2 + 1px);
+top: calc(50% - 14px/2 - 140px);
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* R$ 129,90/mês */
+
+position: absolute;
+width: 122px;
+height: 16px;
+left: calc(50% - 122px/2 + 3.5px);
+top: 114px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Cortes e barba ilimitados Atendimento VIP Horário exclusivo fora do expediente 20% de desconto em produtos Toalha Quente + hidratação inclusas Convidado com 50% 1x por mês */
+
+position: absolute;
+width: 158px;
+height: 87px;
+left: calc(50% - 158px/2 - 8.5px);
+top: 155px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 175px;
+height: 44px;
+left: calc(50% - 175px/2);
+top: 298px;
+
+background: #EEB74F;
+border-radius: 6px;
+
+
+/* Quero o Premium */
+
+width: 127px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #443312;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* O essencial pra manter o estilo */
+
+position: absolute;
+width: 158px;
+height: 8px;
+left: calc(50% - 158px/2 + 0.5px);
+top: 74px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 175px;
+height: 0px;
+left: 33px;
+top: 98px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Olá Daniel */
+
+position: absolute;
+width: 109px;
+height: 16px;
+left: 20px;
+top: 112px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Seu último agendamento */
+
+position: absolute;
+width: 268px;
+height: 16px;
+left: 20px;
+top: 196px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Unidades */
+
+position: absolute;
+width: 100px;
+height: 16px;
+left: 20px;
+top: 662px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Assinaturas */
+
+position: absolute;
+width: 123px;
+height: 16px;
+left: 20px;
+top: 1130px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Quinta, 7 mai 2026 */
+
+position: absolute;
+width: 95px;
+height: 8px;
+left: 20px;
+top: 140px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: rgba(255, 255, 255, 0.8);
+
+
+
+/* iconamoon:profile-fill */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 292px;
+top: 26px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 24.85px;
+height: 24.85px;
+left: calc(50% - 24.85px/2 + 0.43px);
+top: calc(50% - 24.85px/2 + 0.43px);
+
+background: #FFFFFF;
+
+
+/* Frame 1987594625 */
+
+position: absolute;
+width: 44px;
+height: 44px;
+left: 348px;
+top: 26px;
+
+
+
+/* Group 1000001061 */
+
+position: absolute;
+width: 20px;
+height: 12px;
+left: 12px;
+top: 16px;
+
+
+
+/* Line 25 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 28px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 26 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 22px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Line 27 */
+
+position: absolute;
+width: 20px;
+height: 0px;
+left: 12px;
+top: 16px;
+
+border: 2px solid #FFFFFF;
+
+
+/* Logo */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 20px;
+top: 24px;
+
+background: url(gostei_dessa_pórem_não_cubra_202605011911-removebg-preview.png);
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 334px;
+height: 161px;
+left: calc(50% - 334px/2);
+top: 453px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(153, 153, 153, 0) 100%),
+linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 10px;
+
+
+/* ChatGPT Image 12 de jun. de 2026, 10_40_46 2 */
+
+position: absolute;
+width: 122px;
+height: 56px;
+left: 145px;
+top: 500px;
+
+background: url(ChatGPT Image 12 de jun. de 2026, 10_40_46);
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 904px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pedra Branca */
+
+position: absolute;
+width: 155px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Paulo Roberto Vidal, 123 - Pedra Branca */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 807px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 183px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1806px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1821px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1838px;
+
+background: url(.png);
+
+
+/* Map Pin */
+
+position: absolute;
+width: 12px;
+height: 15px;
+left: 20px;
+top: 1855px;
+
+background: url(.png);
+
+
+/* NavHub */
+
+position: absolute;
+width: 90px;
+height: 17px;
+left: 20px;
+top: 1676px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* NavHub Barbearia · Estilo, precisão e tradição em um único lugar. */
+
+position: absolute;
+width: 332px;
+height: 19px;
+left: 20px;
+top: 1705px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Visite-nos */
+
+position: absolute;
+width: 104px;
+height: 17px;
+left: 20px;
+top: 1775px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Group 11 */
+
+position: absolute;
+width: 247px;
+height: 67px;
+left: 41px;
+top: 1806px;
+
+
+
+/* Rua Valdemar Viera, 123, - Jardim Eldorado */
+
+position: absolute;
+width: 217px;
+height: 19px;
+left: 41px;
+top: 1806px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Av. Hilza Terezinha Pagani, 289 - Pagani. */
+
+position: absolute;
+width: 204px;
+height: 19px;
+left: 41px;
+top: 1822px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Rua José Cosme Pamplona, 1447 – Bela Vista. */
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 41px;
+top: 1838px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Avenida Paulo Roberto Vidal, 123 - Pedra Branca. */
+
+position: absolute;
+width: 247px;
+height: 19px;
+left: 41px;
+top: 1854px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+
+color: #7E8573;
+
+
+
+/* Email */
+
+position: absolute;
+width: 12px;
+height: 9px;
+left: 20px;
+top: 1889px;
+
+background: url(.png);
+
+
+/* contato@navhub.com */
+
+position: absolute;
+width: 114px;
+height: 8px;
+left: 38px;
+top: 1889px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Horário de Atendimento */
+
+position: absolute;
+width: 252px;
+height: 32px;
+left: 20px;
+top: 1942px;
+
+font-family: 'Cardo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+
+
+/* Segunda a sexta - 09h-20h */
+
+position: absolute;
+width: 137px;
+height: 8px;
+left: 20px;
+top: 1986px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Sábado - 09h-18h */
+
+position: absolute;
+width: 89px;
+height: 8px;
+left: 20px;
+top: 2002px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #7E8573;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 372px;
+height: 0px;
+left: 20px;
+top: 2058px;
+
+border: 1px solid rgba(238, 183, 79, 0.71);
+
+
+/* Group 12 */
+
+position: absolute;
+width: 267px;
+height: 31px;
+left: 72px;
+top: 2082px;
+
+
+
+/* Feito com precisão de navalha. */
+
+position: absolute;
+width: 176px;
+height: 15px;
+left: 118px;
+top: 2098px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* © 2026 NavHub. Todos os direitos reservados. */
+
+position: absolute;
+width: 267px;
+height: 15px;
+left: 72px;
+top: 2082px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* idêntico à altura da caixa */
+
+color: #7E8573;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 1001px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Bela Vista */
+
+position: absolute;
+width: 127px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua José Cosme Pamplona, 1447 - Bela Vista */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 81px;
+left: 20px;
+top: 710px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Pagani */
+
+position: absolute;
+width: 99px;
+height: 14px;
+left: 80px;
+top: 24px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Av. Hilza Terezina pagani, 289 - Pagani */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 80px;
+top: 50px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Icone Login */
+
+position: absolute;
+left: 6.45%;
+right: 84.95%;
+top: 32.1%;
+bottom: 28.4%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 24px;
+top: 26px;
+
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* icon-park-solid:local-two */
+
+position: absolute;
+width: 12px;
+height: 14px;
+left: calc(50% - 12px/2 - 146px);
+top: calc(50% - 14px/2 + 1.5px);
+
+
+
+/* Mask group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.39%;
+right: 7.39%;
+top: 1.92%;
+bottom: 1.92%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 32.95%;
+top: 23.56%;
+bottom: 47.6%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: -18.18%;
+right: -18.18%;
+top: -7.69%;
+bottom: -7.69%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 88.17%;
+right: 6.45%;
+top: 40.74%;
+bottom: 39.51%;
+
+/* text */
+background: #332F30;
+
+
+/* Group 1000001397 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: 20px;
+top: 236px;
+
+
+
+/* Corte1 */
+
+position: absolute;
+width: 372px;
+height: 169px;
+left: calc(50% - 372px/2);
+top: 236px;
+
+background: #191715;
+border-radius: 10px;
+
+
+/* Nav Jardim Eldorado */
+
+position: absolute;
+width: 146px;
+height: 11px;
+left: 109px;
+top: 28px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FFFFFF;
+
+
+
+/* Rua Valdemar Viera, 123 - Jardim Eldorado */
+
+position: absolute;
+width: 207px;
+height: 7px;
+left: 109px;
+top: 47px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #CACBCA;
+
+
+
+/* Corte Clássico | R$ 50 */
+
+position: absolute;
+width: 132px;
+height: 10px;
+left: 109px;
+top: 70px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #D0CFCF;
+
+
+
+/* Frame 1987594683 */
+
+/* Layout automático */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 24px;
+gap: 10px;
+
+position: absolute;
+width: 340px;
+height: 44px;
+left: 16px;
+top: 109px;
+
+background: rgba(255, 100, 100, 0.04);
+border-radius: 6px;
+
+
+/* tabler:calendar-cancel */
+
+width: 12px;
+height: 12px;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 8.33%;
+top: 12.5%;
+bottom: 8.33%;
+
+border: 1px solid #FF6464;
+
+
+/* Cancelar Agedamento */
+
+width: 160px;
+height: 11px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #FF6464;
+
+
+/* Auto layout por dentro */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 1000001396 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 252px;
+
+
+
+/* Rectangle 5313 */
+
+position: absolute;
+width: 77px;
+height: 77px;
+left: 36px;
+top: 252px;
+
+/* fundo gradient */
+background: linear-gradient(180deg, #FFA44A 0%, #EEB74F 100%);
+border-radius: 6px;
+
+
+/* JUN */
+
+position: absolute;
+width: 21px;
+height: 8px;
+left: 64px;
+top: 263px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* SÁB | 15:00 */
+
+position: absolute;
+width: 58px;
+height: 8px;
+left: 46px;
+top: 309px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 19px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+
+/* 2 */
+
+position: absolute;
+width: 16px;
+height: 22px;
+left: 66px;
+top: 279px;
+
+font-family: 'Hind';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 51px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #000000;
+
+
+

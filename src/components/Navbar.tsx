@@ -10,7 +10,7 @@ export function Navbar() {
   const pathname = usePathname();
   const { userProfile, isAuthenticated } = useScheduling();
 
-  const hideNavbarPaths = ['/agendamento/profissional-data'];
+  const hideNavbarPaths = ['/agendamento/profissional-data', '/login', '/agendamento/confirmacao'];
   if (hideNavbarPaths.includes(pathname)) {
     return null;
   }
